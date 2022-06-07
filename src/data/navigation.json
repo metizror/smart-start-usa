@@ -91,6 +91,39 @@
     ]
   },
   {
+    "id": 2,
+    "link": "/about",
+    "linkText": "Courses",
+    "child": true,
+    "submenu": [
+      {
+        "id": 1.1,
+        "link": "/",
+        "linkText": "Math"
+      },
+      {
+        "id": 1.1,
+        "link": "/",
+        "linkText": "English"
+      },
+      {
+        "id": 1.2,
+        "link": "/science",
+        "linkText": "Science"
+      },
+      {
+        "id": 1.3,
+        "link": "/history",
+        "linkText": "History"
+      },
+      {
+        "id": 1.4,
+        "link": "/Sat-math-prep",
+        "linkText": "Home School"
+      }
+    ]
+  },
+  {
     "id": 3,
     "linkText": "TECHNOLOGY ",
     "child": false,

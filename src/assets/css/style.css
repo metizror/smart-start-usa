@@ -2850,11 +2850,11 @@ footer .footer-links .contact-info li a span {
   width: 30vw;
 }
 .parent-div-modal .form-div {
-  position: absolute;
+  position: fixed;
   display: block;
   width: auto;
   box-sizing: border-box;
-  width: 38%;
+  width: 46%;
 }
 .parent-div-modal .form {
   background-color: white;

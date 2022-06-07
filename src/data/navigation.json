@@ -99,27 +99,27 @@
       {
         "id": 1.1,
         "link": "/",
-        "linkText": "Math"
+        "linkText": "MATH"
       },
       {
         "id": 1.1,
         "link": "/",
-        "linkText": "English"
+        "linkText": "ENGLISH"
       },
       {
         "id": 1.2,
         "link": "/science",
-        "linkText": "Science"
+        "linkText": "SCIENCE"
       },
       {
         "id": 1.3,
         "link": "/history",
-        "linkText": "History"
+        "linkText": "HISTORY"
       },
       {
         "id": 1.4,
         "link": "/Sat-math-prep",
-        "linkText": "Home School"
+        "linkText": "HOME SCHOOL"
       }
     ]
   },

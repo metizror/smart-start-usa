@@ -15,7 +15,7 @@ class Header extends HeaderComponent {
         const stickyheader = this.state.isTop ? 'sticky' : '';
         const isModalIsOpen = this.state.toggleModal
         return (
-        <header className={"header " + stickyheader}>
+            <header className={"header " + stickyheader}>
                 <div className="container-fluid custom-container">
                     <div className="row">
                         <div className="col-12">
@@ -55,7 +55,7 @@ class Header extends HeaderComponent {
                                             <div className="parent-div-modal">
                                                 <div className='sub-div-modals' >
                                                     {isModalIsOpen && <div className='form-div' >
-                                                        <Form  className="form">
+                                                        <Form className="form">
                                                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                                                 <Form.Label>Schedule an evaluation
                                                                     Meet with our faculty and identify the proper
@@ -78,9 +78,8 @@ class Header extends HeaderComponent {
                                                             <Form.Group className="mb-3" controlId="formBasicPassword">
                                                                 <Form.Control type="number " placeholder="Zip Code" />
                                                             </Form.Group>
-                                                            Child Grade
-                                                            <Form.Text>
-                                                                <DropdownButton title="" >
+                                                            <Form.Text >
+                                                                <DropdownButton title="Child Grade" variant="success">
                                                                     <Dropdown.Item href="#/action-1">1</Dropdown.Item>
                                                                     <Dropdown.Item href="#/action-2">2</Dropdown.Item>
                                                                     <Dropdown.Item href="#/action-3">3</Dropdown.Item>

@@ -9,7 +9,7 @@ class Login extends Component {
         return (
             <Fragment>
                 <MetaTags>
-                    <title>Nina - Museum & Shop - React Template | {pagelocation}</title>
+                    <title>Smart Start USA| {pagelocation}</title>
                     <meta
                         name="description"
                         content="#"

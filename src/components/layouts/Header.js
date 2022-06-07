@@ -4,8 +4,8 @@ import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import navigationmenu from '../../data/navigation.json';
 import { Button, Dropdown, DropdownButton, Form } from 'react-bootstrap';
-import { OffcanvasProvider, Trigger, Offcanvas } from 'react-simple-offcanvas'
-import { GetStartedSlider } from './GetStartedSlider';
+// import { OffcanvasProvider, Trigger, Offcanvas } from 'react-simple-offcanvas'
+// import { GetStartedSlider } from './GetStartedSlider';
 
 // import Offcanvas from "react-bootstrap/Offcanvas";
 
@@ -14,9 +14,8 @@ class Header extends HeaderComponent {
     render() {
         const stickyheader = this.state.isTop ? 'sticky' : '';
         const isModalIsOpen = this.state.toggleModal
-        console.log(isModalIsOpen);
         return (
-            <header className={"header " + stickyheader}>
+        <header className={"header " + stickyheader}>
                 <div className="container-fluid custom-container">
                     <div className="row">
                         <div className="col-12">

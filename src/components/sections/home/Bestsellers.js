@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import shopblock from '../../../data/shop/shop.json';
-import { handleOutofStock } from '../../../helper/shophelper';
+// import { handleOutofStock } from '../../../helper/shophelper';
 import Quickview from '../../layouts/Quickview';
-import { OverlayTrigger, Tooltip, Modal } from "react-bootstrap";
+import {
+    // OverlayTrigger, Tooltip,
+    Modal
+} from "react-bootstrap";
 
 
 

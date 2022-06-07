@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-const wishlistlength = 5;
-const cartlength = 5;
+// const wishlistlength = 5;
+// const cartlength = 5;
 
 class Topbar extends Component {
     render() {

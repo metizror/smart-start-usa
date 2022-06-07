@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Form } from 'react-bootstrap';
-import { OffcanvasProvider, Trigger, Offcanvas } from 'react-simple-offcanvas'
+// import { OffcanvasProvider, Trigger, Offcanvas } from 'react-simple-offcanvas'
 export const GetStartedSlider = ({ isModalIsOpen, toggleModalFunc }) => {
     return (
         <>

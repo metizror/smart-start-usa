@@ -1067,6 +1067,9 @@ span.type-tag {
 .text-custom-white {
   color: #ffffff;
 }
+.main-menu .text-custom-white {
+  font-weight: 900 !important;
+}
 .text-light-white {
   color: #6b6b83;
 }

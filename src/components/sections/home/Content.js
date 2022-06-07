@@ -18,18 +18,18 @@ class Content extends Component {
         return ( 
             <Fragment>
                 <Banner/>
-                <Servicetype/>
+                {/* <Servicetype/> */}
                 <Team/>
-                <Bestsellers/>
-                <Videocta/>
+                {/* <Videocta/> */}
                 <Donationbox/> 
                 <Productbox/>
-                <Advertisement/>
-                <Donationcampaigns/>
-                <Calendar/>
+                {/* <Advertisement/> */}
+                {/* <Donationcampaigns/> */}
+                {/* <Calendar/> */}
                 <Gallery/>
                 <Testimonials/>
-                <Blogpost/>
+                {/* <Blogpost/> */}
+                <Bestsellers/>
             </Fragment>
         );
     }

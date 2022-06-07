@@ -52,7 +52,7 @@ class Header extends HeaderComponent {
                                                     }
                                                 </li>
                                             )) : null}
-                                            <div className="parent-div-modal">
+                                            <div className="parent-div-modal" >
                                                 <div className='sub-div-modals' >
                                                     {isModalIsOpen && <div className='form-div' >
                                                         <Form className="form">
@@ -89,6 +89,17 @@ class Header extends HeaderComponent {
                                                                     <Dropdown.Item href="#/action-7">7</Dropdown.Item>
                                                                 </DropdownButton>
                                                             </Form.Text>
+                                                            <Form.Text >
+                                                                <DropdownButton title="Child Age" variant="success">
+                                                                    <Dropdown.Item href="#/action-1">1</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-2">2</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-3">3</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-4">4</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-5">5</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-6">6</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-7">7</Dropdown.Item>
+                                                                </DropdownButton>
+                                                            </Form.Text>
                                                         </Form>
                                                         <Button variant="success" onClick={this.toggleModalFunc}  >Close</Button>
                                                     </div>
@@ -105,7 +116,7 @@ class Header extends HeaderComponent {
                                 <div className="right-side-navigation">
                                     <ul>
                                         <li className="hamburger-menu">
-                                            <Link to="dfdf" className={classNames("menu-btn", { "active": this.state.navmethod })} onClick={this.toggleNav}>
+                                            <Link to="" className={classNames("menu-btn", { "active": this.state.navmethod })} onClick={this.toggleNav}>
                                                 <span />
                                                 <span />
                                                 <span />

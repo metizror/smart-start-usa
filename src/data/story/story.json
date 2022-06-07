@@ -149,7 +149,7 @@
   {
     "id": 4,
     "image": "assets/img/story_image/math.jpg",
-    "name": "Sat Math Prep",
+    "name": "Math",
     "address": "CA",
     "title": "Security for the middle class",
     "shortdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.",
@@ -198,7 +198,7 @@
   {
     "id": 5,
     "image": "assets/img/story_image/sat.png",
-    "name": "Sat Ela Prep",
+    "name": "Sat",
     "address": "FL",
     "title": "Preparing our youth for success",
     "shortdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.",
@@ -246,7 +246,7 @@
   },
   {
     "id": 6,
-    "image": "assets/img/story_image/math.jpg",
+    "image": "",
     "name": "Isee Prep Math",
     "address": "NY",
     "title": "Making College More Affordable",

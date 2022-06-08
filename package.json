@@ -6,7 +6,6 @@
     "node": "16.14.0"
   },
   
-  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",

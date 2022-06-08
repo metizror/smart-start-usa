@@ -14,8 +14,8 @@ class Topbar extends Component {
                             <div className="top-left">
                                 {/* {console.log(window.location.href = 'https://www.facebook.com/Smartstartus-106394168768735' )} */}
                                 <ul className="top-info">
-                                    <li><Link to="#"><i className="fas fa-phone-alt" /> +000 123 45678</Link></li>
-                                    <li><Link to="#"><i className="fas fa-envelope" /> info@example.com</Link></li>
+                                    <li><Link to="#"><i className="fas fa-phone-alt" /> +1 917 268 0197</Link></li>
+                                    <li><Link to="#"><i className="fas fa-envelope" /> school@smartstartus.com</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -23,14 +23,14 @@ class Topbar extends Component {
                             <div className="righ-sec">
                                 <div className="top-right">
                                     <ul className="list-inline">
-                                        <li className="list-inline-item" onClick={() => window.location.href = 'https://www.facebook.com/Smartstartus-106394168768735' }><Link to=""  ><i className="fab fa-facebook-square" /></Link> </li>
-                                        <li className="list-inline-item"><Link to="#"><i className="fab fa-twitter-square" /></Link> </li>
-                                        <li className="list-inline-item"><Link to="#"><i className="fab fa-instagram" /></Link> </li>
-                                        <li className="list-inline-item"><Link to="#"><i className="fab fa-linkedin" /></Link> </li>
-                                        <li className="list-inline-item"><Link to="#"><i className="fab fa-youtube" /></Link> </li>
+                                        <li className="list-inline-item" onClick={() => window.location.href = 'https://www.facebook.com/Smartstartus-106394168768735'}><Link to=""  ><i className="fab fa-facebook-square" /></Link> </li>
+                                        <li className="list-inline-item" onClick={() => window.location.href = 'https://twitter.com/smartstartus1'}><Link to="#"><i className="fab fa-twitter-square" /></Link> </li>
+                                        <li className="list-inline-item" onClick={() => window.location.href = 'https://www.instagram.com/smartstartus/'}><Link to="#"><i className="fab fa-instagram" /></Link> </li>
+                                        <li className="list-inline-item" onClick={() => window.location.href = 'https://www.linkedin.com/company/smart-start-us'}><Link to="#"><i className="fab fa-linkedin" /></Link> </li>
+                                        <li className="list-inline-item" onClick={() => window.location.href = 'https://www.youtube.com/channel/UCPQoFVVOdvIx4n8RAIzFWVg '}><Link to="#"><i className="fab fa-youtube" /></Link> </li>
                                     </ul>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>

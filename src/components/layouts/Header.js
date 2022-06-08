@@ -54,7 +54,7 @@ class Header extends HeaderComponent {
                                             )) : null}
                                             <div className="parent-div-modal" >
                                                 <div className='sub-div-modals' >
-                                                    {isModalIsOpen && <div className='form-div' >
+                                                    {isModalIsOpen && <div className='form-div'  >
                                                         <Form className="form">
                                                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                                                 <Form.Label>Schedule an evaluation

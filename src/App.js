@@ -48,7 +48,7 @@ const ScrollToTop = withRouter(({ children, location: { pathname } }) => {
 
 function App() {
   return (
-    <Router basename={"/"}>
+    <Router basename={"/templatemonster/react/nina/"}>
       <Suspense fallback={<div></div>}>
         <ScrollToTop>
           {/* Home */}

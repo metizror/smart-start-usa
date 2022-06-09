@@ -23,11 +23,11 @@ class Topbar extends Component {
                             <div className="righ-sec">
                                 <div className="top-right">
                                     <ul className="list-inline">
-                                        <li className="list-inline-item" onClick={() => window.location.href = 'https://www.facebook.com/Smartstartus-106394168768735'}><Link to=""  ><i className="fab fa-facebook-square" /></Link> </li>
-                                        <li className="list-inline-item" onClick={() => window.location.href = 'https://twitter.com/smartstartus1'}><Link to="#"><i className="fab fa-twitter-square" /></Link> </li>
-                                        <li className="list-inline-item" onClick={() => window.location.href = 'https://www.instagram.com/smartstartus/'}><Link to="#"><i className="fab fa-instagram" /></Link> </li>
-                                        <li className="list-inline-item" onClick={() => window.location.href = 'https://www.linkedin.com/company/smart-start-us'}><Link to="#"><i className="fab fa-linkedin" /></Link> </li>
-                                        <li className="list-inline-item" onClick={() => window.location.href = 'https://www.youtube.com/channel/UCPQoFVVOdvIx4n8RAIzFWVg '}><Link to="#"><i className="fab fa-youtube" /></Link> </li>
+                                        <li className="list-inline-item" onClick={(e) => { e.preventDefault(); window.location.href = 'https://www.facebook.com/Smartstartus-106394168768735' }}><Link to=""  ><i className="fab fa-facebook-square" /></Link> </li>
+                                        <li className="list-inline-item" onClick={(e) => { e.preventDefault(); window.location.href = 'https://twitter.com/smartstartus1' }}><Link to="#"><i className="fab fa-twitter-square" /></Link> </li>
+                                        <li className="list-inline-item" onClick={(e) => { e.preventDefault(); window.location.href = 'https://www.instagram.com/smartstartus/' }}><Link to="#"><i className="fab fa-instagram" /></Link> </li>
+                                        <li className="list-inline-item" onClick={(e) => { e.preventDefault(); window.location.href = 'https://www.linkedin.com/company/smart-start-us' }}><Link to="#"><i className="fab fa-linkedin" /></Link> </li>
+                                        <li className="list-inline-item" onClick={(e) => { e.preventDefault(); window.location.href = 'https://www.youtube.com/channel/UCPQoFVVOdvIx4n8RAIzFWVg ' }}><Link to="#"><i className="fab fa-youtube" /></Link> </li>
                                     </ul>
                                 </div>
 

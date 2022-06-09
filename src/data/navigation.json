@@ -156,6 +156,7 @@
     "id": 4,
     "linkText": "ABOUT US",
     "child": false,
+    "link":"/about",
     "submenu": [
       {
         "id": 4.1,

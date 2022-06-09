@@ -1273,7 +1273,7 @@ span.type-tag {
   justify-content: space-between;
 }
 .header .navigation .logo {
-  width: 10%;
+  width: 5%;
   margin: 10px 0;
   z-index: 10;
 }
@@ -2866,7 +2866,7 @@ footer .footer-links .contact-info li a span {
   transition: visibility 1s, transform 1s cubic-bezier(0.77, 0, 0.175, 1),
     box-shadow 0.3s ease;
 }
-.sub-div-modals {
+ .parent-div-modal .sub-div-modals {
   height: 0px;
 }
 
@@ -2875,7 +2875,7 @@ footer .footer-links .contact-info li a span {
 
   /* pointer-events: all;
   position: relative; */
-  transform: translateY(-100vh);
+  transform: translateY(-140vh);
   /* transition: visibility 1s, transform 1s cubic-bezier(0.77, 0, 0.175, 1),
     box-shadow 0.3s ease; */
   width: 100%;

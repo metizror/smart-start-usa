@@ -2,7 +2,7 @@
     {
         "id":1,
         "image":"assets/img/banner/banner1.png",
-        "title":"our Mission is <span class='text-dark-red'>to bring out and develop the best in </span> Everyone",
+        "title":"Our mission is to provide all students with various opportunities to develop their   <span class='text-dark-red'>academic skills and conquer all obstacles  </span> they encounter on their Academic Roads.",
         "subtitle":"Around the world.",
         "text":"To to provide all students with various opportunities to develop their academic skills and conquer all obstacles they encounter on their academic roads.",
         "position":"col-lg-12",

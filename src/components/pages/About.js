@@ -12,7 +12,7 @@ const pagelocation = "About Us";
 class About extends Component {
     render() {
         return (
-            <Fragment>
+        <Fragment>
                 <MetaTags>
                     <title>Smart Start USA | {pagelocation}</title>
                     <meta

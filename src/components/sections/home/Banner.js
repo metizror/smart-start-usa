@@ -31,9 +31,9 @@ class Banner extends Component {
                                 <div className="row justify-content-center">
                                     <div className={"align-self-center " + item.position}>
                                         <div className={item.extraclass}>
-                                            <h5 className="text-white">{item.subtitle}</h5>
-                                            <h1 className="text-white fw-600" dangerouslySetInnerHTML={{ __html: item.title }} />
-                                            <p className="text-white fw-400">{item.text}</p>
+                                            {/* <h5 className="text-white">{item.subtitle}</h5> */}
+                                            <h5 className="text-white fw-300" dangerouslySetInnerHTML={{ __html: item.title }} />
+                                            {/* <p className="text-white fw-400">{item.text}</p> */}
                                             <Link to="/about" className="btn-solid with-line btn-big mt-20 mr-1"><span>Learn More <i className="fas fa-caret-right" /></span></Link>
                                             <Link to="/shop-left" className="border-butn mt-20 ml-1"><span>Shop Now</span></Link>
                                         </div>

@@ -8,7 +8,7 @@ class Breadcrumbs extends Component {
                 <div className="overlay overlay-bg" />
                 <div className="container">
                     <div className="breadcrumb-content">
-                        <h2>{this.props.breadcrumb.pagename}</h2>
+                        <h2 class="fs-5">{this.props.breadcrumb.pagename}</h2>
                         <ul>
                             <li><Link to="/">Home</Link>
                             </li>

@@ -9,6 +9,9 @@ const Homefour = React.lazy(() => import("./components/pages/Homefour"));
 const Homefive = React.lazy(() => import("./components/pages/Homefive"));
 // About
 const About = React.lazy(() => import("./components/pages/About"));
+
+// Technology
+const Technology = React.lazy(() => import("./components/pages/Technology"));
 // Events
 const Events = React.lazy(() => import("./components/pages/Events"));
 // Shop
@@ -59,6 +62,8 @@ function App() {
           <Route exact path="/sat-ela-prep" component={Homefive} />
           {/* About */}
           <Route exact path="/about" component={About} />
+          {/* Technology */}
+          <Route exact path="/technology" component={Technology} />
           {/* Events */}
           <Route exact path="/events" component={Events} />
           {/* Shop */}

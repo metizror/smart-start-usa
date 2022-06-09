@@ -127,6 +127,7 @@
     "id": 3,
     "linkText": "TECHNOLOGY ",
     "child": false,
+    "link":"/technology",
     "submenu": [
       {
         "id": 3.1,

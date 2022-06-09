@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import Abouttext from './Abouttext';
 import Banner from './Banner';
 import Bestsellers from './Bestsellers';
 import Cta from '../../layouts/Cta';
@@ -10,13 +9,14 @@ import Filterproduct from './Filterproduct';
 import Donationcampaigns from './Donationcampaigns';
 import Shopbox from './Shopbox';
 import Blogpost from './Blogpost';
+import AboutText from '../about/AboutText';
 
 class Content extends Component {
     render() {
         return (
             <Fragment>
                 <Banner/>
-                <Abouttext/> 
+                <AboutText /> 
                 <Bestsellers/>
                 <Cta/>
                 <Donationbox/>

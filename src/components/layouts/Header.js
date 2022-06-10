@@ -41,15 +41,13 @@ class Header extends HeaderComponent {
                                                                         <ul className="sub-menu">
                                                                             {sub_item.submenu.map((third_item, i) => (
                                                                                 <li className={`menu-item ${third_item.child ? 'menu-item-has-children' : ''} `} key={i}>
-                                                                                    {/* <Link
-                                                                                    to={third_item.link}>{third_item.linkText}</Link> */}
-                                                                                    {console.log(third_item) }
+
                                                                                     {third_item.child ? <Link onClick={e => e.preventDefault()} to="/" > {third_item.linkText} <span className="arrow" /></Link> : <Link to={third_item.link}> {third_item.linkText} </Link>}
                                                                                     {third_item.submenu ?
                                                                                         <ul className="sub-menu">
                                                                                             {third_item.submenu.map((forth_item, i) => (
                                                                                                 <li className={`menu-item ${forth_item.child ? 'menu-item-has-children' : ''} `} key={i}>
-                                                                                                    
+
                                                                                                     <Link
                                                                                                         to={forth_item.link}>{forth_item.linkText}</Link>
                                                                                                 </li>

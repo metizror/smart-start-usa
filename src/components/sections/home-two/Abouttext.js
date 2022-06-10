@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class Abouttext extends Component {
+class AboutText extends Component {
     render() {
         return (
             <section className="about-section-style-1">
@@ -27,4 +27,4 @@ class Abouttext extends Component {
     }
 }
 
-export default Abouttext;
+export default AboutText;

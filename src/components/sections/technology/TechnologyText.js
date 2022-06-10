@@ -65,14 +65,13 @@ export class TechnologyText extends Component {
                             The GDPR requires controllers and processors of personal data to “implement appropriate technical and organizational” measures to ensure a sufficient level of security.</p>
                         <p className="text-light-white">Smart Start US is a Google Cloud partner so we primarily use top-notch Google Cloud Platform servers as our third-party cloud storage subcontractor and we do not host customer data on our premises.</p>
                         <p className="text-light-white"> <h6> This means that all our servers are located at Google premises, in different world-class data centers around the world</h6>
-                            •	West USA (California)
-                            •	Central USA (Iowa)
-                            •	East USA (South Carolina, Virginia)
-                            •	South America (Brazil/Sao Paolo)
-                            •	Central EU (Netherlands, Belgium, Germany)
-                            •	Southeast Asia (Singapore)
-                            Google Cloud Platform is a leading cloud provider, and holds industry best security certifications, such as SOC2/3 and ISO27001, and provides encryption in transit and at rest, without any action required from our customers. All servers are protected by biometric locks and round-the-clock interior and exterior surveillance monitoring. Only authorized personnel have access to the data center. 24/7/365 onsite staff provides additional protection against unauthorized entry and security breaches. For more info on Google Cloud Platform physical server security check here.
-                            •	High availability. We’ve designed Smart Start US to ensure high availability throughout the platform. At every layer of the stack, we have a suite of contingency mechanisms, including automatic failover, to ensure 24/7 application availability.
+                           <p> •	West USA (California)</p>
+                           <p> •	Central USA (Iowa)</p>
+                           <p> •	East USA (South Carolina, Virginia)</p>
+                           <p> •	South America (Brazil/Sao Paolo)</p>
+                           <p> •	Central EU (Netherlands, Belgium, Germany)</p>
+                           <p> •	Southeast Asia (Singapore) Google Cloud Platform is a leading cloud provider, and holds industry best security certifications, such as SOC2/3 and ISO27001, and provides encryption in transit and at rest, without any action required from our customers. All servers are protected by biometric locks and round-the-clock interior and exterior surveillance monitoring. Only authorized personnel have access to the data center. 24/7/365 onsite staff provides additional protection against unauthorized entry and security breaches. For more info on Google Cloud Platform physical server security check here.</p>
+                           <p> •	High availability. We’ve designed Smart Start US to ensure high availability throughout the platform. At every layer of the stack, we have a suite of contingency mechanisms, including automatic failover, to ensure 24/7 application availability.</p>
                         </p>
                         <p className="text-light-white"> <h6> Protecting Smart Start US Against rogue or hacked users</h6>
                             We can secure ourselves, but if your computer gets compromised or someone gets into your Smart Start US account, that’s not good for either of us. Therefore,
@@ -81,14 +80,14 @@ export class TechnologyText extends Component {
                             <p> •	We monitor accounts and school activity for signs of abuse (both via automatic notifications and human reviewers).</p>
                         </p>
 
-                    <p className="text-light-white">Disclosure
-                        We are working continuously to make our systems secure. But modern software is amongst the most complex artefacts ever created by humans and cybersecurity is a moving target. If you do find any security issues, whether you are a user or security expert, please reach out to us at support@smartstartus.com.
+                        <p className="text-light-white">Disclosure
+                            We are working continuously to make our systems secure. But modern software is amongst the most complex artefacts ever created by humans and cybersecurity is a moving target. If you do find any security issues, whether you are a user or security expert, please reach out to us at support@smartstartus.com.
 
-                        We will make sure the issue is fixed and updated ASAP.</p>
-                    <p className="text-light-white">
-                        Our classes are led by a team of highly qualified licensed teachers with an extensive academic background and mastery of virtual education. Smart Start USA inspires students to become future leaders, lifelong learners, and critical thinkers responsible for their own choices in life. Our curriculum is academically diverse, rigorous, and helps our students stay motivated while achieving their individual academic goals. In addition, we provide various educational resources such as testing materials, educational software, etc., to meet the unique needs of our learners. Therefore, all our students achieve remarkable test scores and shoot to the top of their classes.</p>
+                            We will make sure the issue is fixed and updated ASAP.</p>
+                        <p className="text-light-white">
+                            Our classes are led by a team of highly qualified licensed teachers with an extensive academic background and mastery of virtual education. Smart Start USA inspires students to become future leaders, lifelong learners, and critical thinkers responsible for their own choices in life. Our curriculum is academically diverse, rigorous, and helps our students stay motivated while achieving their individual academic goals. In addition, we provide various educational resources such as testing materials, educational software, etc., to meet the unique needs of our learners. Therefore, all our students achieve remarkable test scores and shoot to the top of their classes.</p>
+                    </div>
                 </div>
-            </div>
             </Container >
         )
     }

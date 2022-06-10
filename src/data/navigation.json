@@ -104,73 +104,38 @@
         "submenu": [
           {
             "id": 3.11,
-            "linkText": "Mathematics 3",
+            "linkText": "Mathematics",
             "child": true,
             "submenu": [
               {
                 "id": 3.111,
                 "link": "/shop-left",
-                "linkText": "3"
-              }
-            ]
-          },
-          {
-            "id": 3.12,
-            "linkText": "Mathematics 4",
-            "child": true,
-            "submenu": [
-              {
-                "id": 3.112,
-                "link": "/shop-left",
-                "linkText": "4"
-              }
-            ]
-          },
-          {
-            "id": 3.11,
-            "linkText": "Mathematics 5",
-            "child": true,
-            "submenu": [
+                "linkText": "Grades 3"
+              },
               {
                 "id": 3.111,
                 "link": "/shop-left",
-                "linkText": "5"
-              }
-            ]
-          },
-          {
-            "id": 3.11,
-            "linkText": "Mathematics 6",
-            "child": true,
-            "submenu": [
+                "linkText": "Grades 4"
+              },
               {
                 "id": 3.111,
                 "link": "/shop-left",
-                "linkText": "6"
-              }
-            ]
-          },
-          {
-            "id": 3.11,
-            "linkText": "Mathematics 7",
-            "child": true,
-            "submenu": [
+                "linkText": "Grades 5"
+              },
               {
                 "id": 3.111,
                 "link": "/shop-left",
-                "linkText": "7"
-              }
-            ]
-          },
-          {
-            "id": 3.11,
-            "linkText": "Mathematics 8",
-            "child": true,
-            "submenu": [
+                "linkText": "Grades 6"
+              },
               {
                 "id": 3.111,
                 "link": "/shop-left",
-                "linkText": "8"
+                "linkText": "Grades 7"
+              },
+              {
+                "id": 3.111,
+                "link": "/shop-left",
+                "linkText": "Grades 8"
               }
             ]
           },
@@ -178,18 +143,6 @@
           {
             "id": 3.11,
             "linkText": "ALGEBRA I",
-            "child": true,
-            "submenu": [
-              {
-                "id": 3.111,
-                "link": "/shop-left",
-                "linkText": "Grades 9-12"
-              }
-            ]
-          },
-          {
-            "id": 3.11,
-            "linkText": "GEOMETRY",
             "child": true,
             "submenu": [
               {
@@ -211,6 +164,19 @@
               }
             ]
           },
+          {
+            "id": 3.11,
+            "linkText": "GEOMETRY",
+            "child": true,
+            "submenu": [
+              {
+                "id": 3.111,
+                "link": "/shop-left",
+                "linkText": "Grades 9-12"
+              }
+            ]
+          },
+
           {
             "id": 3.11,
             "linkText": "Calculus",
@@ -287,32 +253,32 @@
               {
                 "id": 3.111,
                 "link": "/shop-left",
-                "linkText": "3"
+                "linkText": "Grades 3"
               },
               {
                 "id": 3.112,
                 "link": "/shop-left",
-                "linkText": "4"
+                "linkText": "Grades 4"
               },
               {
                 "id": 3.113,
                 "link": "/shop-left",
-                "linkText": "5"
+                "linkText": "Grades 5"
               },
               {
                 "id": 3.114,
                 "link": "/shop-left",
-                "linkText": "6"
+                "linkText": "Grades 6"
               },
               {
                 "id": 3.115,
                 "link": "/shop-left",
-                "linkText": "7"
+                "linkText": "Grades 7"
               },
               {
                 "id": 3.116,
                 "link": "/shop-left",
-                "linkText": "8"
+                "linkText": "Grades 8"
               }
             ]
           },

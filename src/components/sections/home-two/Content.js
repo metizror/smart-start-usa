@@ -9,14 +9,14 @@ import Filterproduct from './Filterproduct';
 import Donationcampaigns from './Donationcampaigns';
 import Shopbox from './Shopbox';
 import Blogpost from './Blogpost';
-import AboutText from '../about/AboutText';
+// import AboutText from '../about/AboutText';
 
 class Content extends Component {
     render() {
         return (
             <Fragment>
                 <Banner/>
-                <AboutText /> 
+                {/* <AboutText />  */}
                 <Bestsellers/>
                 <Cta/>
                 <Donationbox/>

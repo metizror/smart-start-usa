@@ -35,6 +35,7 @@ class Banner extends Component {
                                             <h5 className="text-white fw-300" dangerouslySetInnerHTML={{ __html: item.title }} />
                                             {/* <p className="text-white fw-400">{item.text}</p> */}
                                             <Link to="/about" className="btn-solid with-line btn-big mt-20 mr-1"><span>Learn More <i className="fas fa-caret-right" /></span></Link>
+                                            <Link to="/about" className="btn-solid with-line btn-big mt-20 mr-1"><span>Learn More <i className="fas fa-caret-right" /></span></Link>
                                             <Link to="/shop-left" className="border-butn mt-20 ml-1"><span>Shop Now</span></Link>
                                         </div>
                                     </div>

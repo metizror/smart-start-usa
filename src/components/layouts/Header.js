@@ -22,7 +22,7 @@ class Header extends HeaderComponent {
                             <div className="navigation">
                                 <div className="logo">
                                     <Link to="/">
-                                        <img src={process.env.PUBLIC_URL + "/assets/img/newlogo.png"} className="image-fit" alt="logo" />
+                                        <img src={process.env.PUBLIC_URL + "/assets/img/logo/newlogo.png"} className="image-fit" alt="logo" />
                                     </Link>
                                 </div>
                                 <div className={classNames("main-navigation", { "active": this.state.navmethod })}>
@@ -40,8 +40,22 @@ class Header extends HeaderComponent {
                                                                     {sub_item.submenu ?
                                                                         <ul className="sub-menu">
                                                                             {sub_item.submenu.map((third_item, i) => (
-                                                                                <li className="menu-item" key={i}><Link
-                                                                                    to={third_item.link}>{third_item.linkText}</Link>
+                                                                                <li className={`menu-item ${third_item.child ? 'menu-item-has-children' : ''} `} key={i}>
+                                                                                    {/* <Link
+                                                                                    to={third_item.link}>{third_item.linkText}</Link> */}
+                                                                                    {console.log(third_item) }
+                                                                                    {third_item.child ? <Link onClick={e => e.preventDefault()} to="/" > {third_item.linkText} <span className="arrow" /></Link> : <Link to={third_item.link}> {third_item.linkText} </Link>}
+                                                                                    {third_item.submenu ?
+                                                                                        <ul className="sub-menu">
+                                                                                            {third_item.submenu.map((forth_item, i) => (
+                                                                                                <li className={`menu-item ${forth_item.child ? 'menu-item-has-children' : ''} `} key={i}>
+                                                                                                    
+                                                                                                    <Link
+                                                                                                        to={forth_item.link}>{forth_item.linkText}</Link>
+                                                                                                </li>
+                                                                                            ))}
+                                                                                        </ul> : null}
+
                                                                                 </li>
                                                                             ))}
                                                                         </ul> : null}
@@ -53,62 +67,62 @@ class Header extends HeaderComponent {
                                                 </li>
                                             )) : null}
                                             {/* <div> */}
-                                                <div className="parent-div-modal" >
-                                                    <div className='sub-div-modals is-open' >
-                                                        <div className={isModalIsOpen ? 'open' : 'form-div '}   >
-                                                            <Form className="form">
-                                                                <Form.Group className="mb-3" controlId="formBasicEmail">
-                                                                    <Form.Label>Schedule an evaluation
-                                                                        Meet with our faculty and identify the proper
-                                                                        course level for your child.</Form.Label>
-                                                                </Form.Group>
+                                            <div className="parent-div-modal" >
+                                                <div className='sub-div-modals is-open' >
+                                                    <div className={isModalIsOpen ? 'open' : 'form-div '}   >
+                                                        <Form className="form">
+                                                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                                                <Form.Label>Schedule an evaluation
+                                                                    Meet with our faculty and identify the proper
+                                                                    course level for your child.</Form.Label>
+                                                            </Form.Group>
 
-                                                                <Form.Group className="mb-3" controlId="formBasicPassword">
-                                                                    <Form.Control type="text" placeholder="FirstName" />
-                                                                </Form.Group>
-                                                                <Form.Group className="mb-3" controlId="formBasicPassword">
-                                                                    <Form.Control type="text" placeholder="LastName" />
-                                                                </Form.Group>
-                                                                <Form.Group className="mb-3" controlId="formBasicPassword">
+                                                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                                                                <Form.Control type="text" placeholder="FirstName" />
+                                                            </Form.Group>
+                                                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                                                                <Form.Control type="text" placeholder="LastName" />
+                                                            </Form.Group>
+                                                            <Form.Group className="mb-3" controlId="formBasicPassword">
 
-                                                                    <Form.Control type="email" placeholder="Enter email" />
-                                                                </Form.Group>
-                                                                <Form.Group className="mb-3" controlId="formBasicPassword">
-                                                                    <Form.Control type="number" placeholder="Phone Number" />
-                                                                </Form.Group>
-                                                                <Form.Group className="mb-3" controlId="formBasicPassword">
-                                                                    <Form.Control type="number " placeholder="Zip Code" />
-                                                                </Form.Group>
-                                                                {/* <Form.Text > */}
-                                                                <Form.Text className="d-flex flex-row" placement="right">
-                                                                    <DropdownButton title="Child Grade" variant="success">
-                                                                        <Dropdown.Item href="#/action-1">1</Dropdown.Item>
-                                                                        <Dropdown.Item href="#/action-2">2</Dropdown.Item>
-                                                                        <Dropdown.Item href="#/action-3">3</Dropdown.Item>
-                                                                        <Dropdown.Item href="#/action-4">4</Dropdown.Item>
-                                                                        <Dropdown.Item href="#/action-5">5</Dropdown.Item>
-                                                                        <Dropdown.Item href="#/action-6">6</Dropdown.Item>
-                                                                        <Dropdown.Item href="#/action-7">7</Dropdown.Item>
-                                                                    </DropdownButton>
-                                                                    {/* </Form.Text> */}
-                                                                    {/* <Form.Text > */}
-                                                                    <DropdownButton title="Child Age" variant="success" className='ml-3'>
-                                                                        <Dropdown.Item href="#/action-1">1</Dropdown.Item>
-                                                                        <Dropdown.Item href="#/action-2">2</Dropdown.Item>
-                                                                        <Dropdown.Item href="#/action-3">3</Dropdown.Item>
-                                                                        <Dropdown.Item href="#/action-4">4</Dropdown.Item>
-                                                                        <Dropdown.Item href="#/action-5">5</Dropdown.Item>
-                                                                        <Dropdown.Item href="#/action-6">6</Dropdown.Item>
-                                                                        <Dropdown.Item href="#/action-7">7</Dropdown.Item>
-                                                                    </DropdownButton>
-                                                                </Form.Text>
+                                                                <Form.Control type="email" placeholder="Enter email" />
+                                                            </Form.Group>
+                                                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                                                                <Form.Control type="number" placeholder="Phone Number" />
+                                                            </Form.Group>
+                                                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                                                                <Form.Control type="number " placeholder="Zip Code" />
+                                                            </Form.Group>
+                                                            {/* <Form.Text > */}
+                                                            <Form.Text className="d-flex flex-row" placement="right">
+                                                                <DropdownButton title="Child Grade" variant="success">
+                                                                    <Dropdown.Item href="#/action-1">1</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-2">2</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-3">3</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-4">4</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-5">5</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-6">6</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-7">7</Dropdown.Item>
+                                                                </DropdownButton>
                                                                 {/* </Form.Text> */}
-                                                            </Form>
-                                                            <Button variant="success" className={''} onClick={this.toggleModalFunc}  >Close</Button>
-                                                        </div>
+                                                                {/* <Form.Text > */}
+                                                                <DropdownButton title="Child Age" variant="success" className='ml-3'>
+                                                                    <Dropdown.Item href="#/action-1">1</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-2">2</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-3">3</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-4">4</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-5">5</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-6">6</Dropdown.Item>
+                                                                    <Dropdown.Item href="#/action-7">7</Dropdown.Item>
+                                                                </DropdownButton>
+                                                            </Form.Text>
+                                                            {/* </Form.Text> */}
+                                                        </Form>
+                                                        <Button variant="success" className={''} onClick={this.toggleModalFunc}  >Close</Button>
                                                     </div>
                                                 </div>
-                                                <Button variant="success" className={isModalIsOpen ? 'open' : ''} onClick={this.toggleModalFunc}>Get Started</Button>
+                                            </div>
+                                            <Button variant="success" className={isModalIsOpen ? 'open' : ''} onClick={this.toggleModalFunc}>Get Started</Button>
                                             {/* </div> */}
                                             {/* <GetStartedSlider isModalIsOpen={isModalIsOpen} toggleModalFunc={this.toggleModalFunc} /> */}
                                         </ul>

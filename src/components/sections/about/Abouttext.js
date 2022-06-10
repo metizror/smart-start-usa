@@ -14,7 +14,6 @@ class AboutText extends Component {
                                 <p className="text-light-white">
                                     Our classes are led by a team of highly qualified licensed teachers with an extensive academic background and mastery of virtual education. Smart Start USA inspires students to become future leaders, lifelong learners, and critical thinkers responsible for their own choices in life. Our curriculum is academically diverse, rigorous, and helps our students stay motivated while achieving their individual academic goals. In addition, we provide various educational resources such as testing materials, educational software, etc., to meet the unique needs of our learners. Therefore, all our students achieve remarkable test scores and shoot to the top of their classes.</p>
                                 <p className="text-light-green">Join us today and make Your Smart Start on the road to success!</p>
-                                <Link to="/about" className="btn-solid with-line btn-big mt-20"><span>Learn More <i className="fas fa-caret-right" /></span></Link>
                             </div>
                         </div>
 

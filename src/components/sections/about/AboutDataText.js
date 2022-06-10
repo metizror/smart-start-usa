@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react'
 
-class AboutText extends Component {
+export class AboutDataText extends Component {
     render() {
         return (
             <section className="aboutus section-padding">
@@ -39,8 +38,8 @@ class AboutText extends Component {
                     </div>
                 </div>
             </section>
-        );
+        )
     }
 }
 
-export default AboutText;
+export default AboutDataText

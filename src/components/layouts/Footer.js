@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
-import instagram from '../../data/instagram.json';
-import { Swiper, SwiperSlide } from 'swiper/react';
+// import instagram from '../../data/instagram.json';
+// import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
 
 const settings = {
@@ -32,21 +32,7 @@ class Footer extends Component {
         return (
             <Fragment>
                 <footer className="section-padding bg-light-theme pt-0 u-line bg-custom-primary">
-                    <Swiper wrapperTag="ul" className="u-line instagram-slider swiper-container" {...settings}>
-                        {instagram.map((item, i) => (
-                            <SwiperSlide tag="li" key={i}>
-                                <Link to="#">
-                                    <img src={process.env.PUBLIC_URL + "/" + item.image} alt="instagram" />
-                                </Link>
-                                <div className="insta-icon">
-                                    <div>
-                                        <i className="fab fa-instagram text-red-light" />
-                                    </div>
-                                </div>
-                                {/*  */}
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
+                   
                     <div className="container-fluid custom-container">
                         <div className="row">
                             <div className="col-xl col-lg-4 col-md-4 col-sm-6">
@@ -58,7 +44,7 @@ class Footer extends Component {
                                         </Link>
                                     </div>
                                     <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt</p>
+                                        incididunt</p>
                                 </div>
                             </div>
                             <div className="col-xl col-lg-4 col-md-4 col-sm-6">
@@ -116,19 +102,19 @@ class Footer extends Component {
                                     <ul className="contact-info">
                                         <li>
                                             <Link to="#" className="text-white"> <span><i className="pe-7s-timer" /></span>
-                Monday - Friday: 9:00 AM - 06:00 PM</Link>
+                                                Monday - Friday: 9:00 AM - 06:00 PM</Link>
                                         </li>
                                         <li>
                                             <Link to="#" className="text-white"> <span><i className="pe-7s-mail" /></span>
-                info@example.com</Link>
+                                                info@example.com</Link>
                                         </li>
                                         <li>
                                             <Link to="#" className="text-white"> <span><i className="pe-7s-call" /></span>
-                (+348) 123 456 7890</Link>
+                                                (+348) 123 456 7890</Link>
                                         </li>
                                         <li>
                                             <Link to="#" className="text-white"> <span><i className="pe-7s-map-marker" /></span>
-                (+348) 123 456 7890</Link>
+                                                (+348) 123 456 7890</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -147,11 +133,11 @@ class Footer extends Component {
                                 </div>
                             </div>
                             <div className="col-lg-4 text-center medewithlove align-self-center"> <Link to="#" className="text-custom-white">Made
-          with Real <i className="fas fa-heart" /> Yourwebsite</Link>
+                                with Real <i className="fas fa-heart" /> Yourwebsite</Link>
                             </div>
                             <div className="col-lg-4">
                                 <div className="copyright-text"> <span className="text-white">© <Link to="#" className="text-white">Yourwebsite</Link> -
-            2021 | All Right Reserved</span>
+                                    2021 | All Right Reserved</span>
                                 </div>
                             </div>
                         </div>

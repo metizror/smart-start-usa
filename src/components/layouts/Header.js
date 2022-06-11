@@ -11,6 +11,9 @@ import { Button, Dropdown, DropdownButton, Form } from 'react-bootstrap';
 
 
 class Header extends HeaderComponent {
+    addNewLinkHandler(forth_item) {
+        return window.location.href = forth_item.link
+    }
     render() {
         const stickyheader = this.state.isTop ? 'sticky' : '';
         const isModalIsOpen = this.state.toggleModal
@@ -49,7 +52,11 @@ class Header extends HeaderComponent {
                                                                                                 <li className={`menu-item ${forth_item.child ? 'menu-item-has-children' : ''} `} key={i}>
 
                                                                                                     <Link
-                                                                                                        to={forth_item.link}>{forth_item.linkText}</Link>
+                                                                                                        onClick={() => this.addNewLinkHandler(forth_item)}
+                                                                                                        // to={window.href = forth_item.link}
+                                                                                                    >{forth_item.linkText}</Link>
+                                                                                                    {/* {this.addNewLinkHandler()} */}
+                                                                                                    {/* {window.location.href = forth_item.link} */}
                                                                                                 </li>
                                                                                             ))}
                                                                                         </ul> : null}

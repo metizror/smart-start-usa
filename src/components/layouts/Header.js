@@ -14,7 +14,7 @@ class Header extends HeaderComponent {
     addNewLinkHandler(forth_item) {
         const isLink = forth_item.link.search('mylearnworlds') == -1 ? false : true
         // console.log(forth_item.link.search('mylearnworlds'));
-        if (!isLink ) {
+        if (!isLink) {
             return forth_item;
         } else {
             console.log('falsess');
@@ -37,7 +37,7 @@ class Header extends HeaderComponent {
                                 </div>
                                 <div className={classNames("main-navigation", { "active": this.state.navmethod })}>
                                     <nav>
-                                        <ul className="main-menu">
+                                        <ul className="main-menu" >
 
                                             {navigationmenu.length > 0 ? navigationmenu.map((item, i) => (
                                                 <li key={i} className={`menu-item ${item.child ? 'menu-item-has-children' : ''} `} onClick={this.triggerChild}>
@@ -79,7 +79,7 @@ class Header extends HeaderComponent {
                                                 </li>
                                             )) : null}
                                             {/* <div> */}
-                                            <div className="parent-div-modal" >
+                                            <div className="parent-div-modal"  >
                                                 <div className='sub-div-modals is-open' >
                                                     <div className={isModalIsOpen ? 'open' : 'form-div '}   >
                                                         <Form className="form">
@@ -134,10 +134,12 @@ class Header extends HeaderComponent {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <Button variant="success" className={isModalIsOpen ? 'open' : ''} onClick={this.toggleModalFunc}>Get Started</Button>
                                             {/* </div> */}
                                             {/* <GetStartedSlider isModalIsOpen={isModalIsOpen} toggleModalFunc={this.toggleModalFunc} /> */}
                                         </ul>
+                                            <div className='get-started-btn' >
+                                                <Button variant="success"  style={{padding:"17px"}} className={isModalIsOpen ? 'open' : ''} onClick={this.toggleModalFunc}>Get Started</Button>
+                                            </div>
                                     </nav>
 
 

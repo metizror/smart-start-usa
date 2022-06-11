@@ -12,7 +12,14 @@ import { Button, Dropdown, DropdownButton, Form } from 'react-bootstrap';
 
 class Header extends HeaderComponent {
     addNewLinkHandler(forth_item) {
-        return window.location.href = forth_item.link
+        const isLink = forth_item.link.search('mylearnworlds') == -1 ? false : true
+        // console.log(forth_item.link.search('mylearnworlds'));
+        if (!isLink ) {
+            return forth_item;
+        } else {
+            console.log('falsess');
+            return window.location.href = forth_item.link
+        }
     }
     render() {
         const stickyheader = this.state.isTop ? 'sticky' : '';
@@ -53,7 +60,7 @@ class Header extends HeaderComponent {
 
                                                                                                     <Link
                                                                                                         onClick={() => this.addNewLinkHandler(forth_item)}
-                                                                                                        // to={window.href = forth_item.link}
+                                                                                                    // to={window.href = forth_item.link}
                                                                                                     >{forth_item.linkText}</Link>
                                                                                                     {/* {this.addNewLinkHandler()} */}
                                                                                                     {/* {window.location.href = forth_item.link} */}

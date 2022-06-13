@@ -2845,6 +2845,7 @@ footer .footer-links .contact-info li a span {
   /* width: auto; */
   position: fixed;
   top: 0;
+  right: -20px;
 }
 
 .parent-div-modal {
@@ -2880,18 +2881,18 @@ footer .footer-links .contact-info li a span {
   transform: translateY(-140vh);
   /* transition: visibility 1s, transform 1s cubic-bezier(0.77, 0, 0.175, 1),
     box-shadow 0.3s ease; */
-  width: 100%;
+  width: 80%;
 }
 .parent-div-modal .open {
   transform: translateY(-0vh);
   transition: visibility 1s, transform 1s cubic-bezier(0.77, 0, 0.175, 1),
     box-shadow 0.3s ease;
-  width: 100%;
+  width: 80%;
 }
 .parent-div-modal .form {
   background-color: white;
   padding: 40px;
-  width: 122%;
+  width: 100%;
   right: -3px;
   /* transition: all 0.5s ease-in-out; */
 }

@@ -137,9 +137,9 @@ class Header extends HeaderComponent {
                                             {/* </div> */}
                                             {/* <GetStartedSlider isModalIsOpen={isModalIsOpen} toggleModalFunc={this.toggleModalFunc} /> */}
                                         </ul>
-                                            <div className='get-started-btn' >
-                                                <Button variant="success"  style={{padding:"17px"}} className={isModalIsOpen ? 'open' : ''} onClick={this.toggleModalFunc}>Get Started</Button>
-                                            </div>
+                                        <div className='get-started-btn' >
+                                            <Button variant="success" style={{ padding: "17px" }} className={isModalIsOpen ? 'open' : ''} onClick={this.toggleModalFunc}>Get Started</Button>
+                                        </div>
                                     </nav>
 
 

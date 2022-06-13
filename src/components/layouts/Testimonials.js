@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-// import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
-// import testimonials from '../../data/testimonials.json';
-// import { getAuthor } from '../../helper/helper';
+import testimonials from '../../data/testimonials.json';
+import { getAuthor } from '../../helper/helper';
 
 // install Swiper components
 SwiperCore.use([Navigation]);
@@ -34,7 +34,7 @@ class Testimonials extends Component {
                     </div>
                     <div className="row">
                         <div className="col-md-12">
-                            {/* <Swiper className="feedback-slider p-relative swiper-container" {...settings} navigation>
+                            <Swiper className="feedback-slider p-relative swiper-container" {...settings} navigation>
                                 {testimonials.map((item, i) => (
                                     <SwiperSlide key={i}>
                                         {getAuthor(item.author).map((author, i) => (
@@ -47,7 +47,7 @@ class Testimonials extends Component {
                                         ))}
                                     </SwiperSlide>
                                 ))}
-                            </Swiper> */}
+                            </Swiper>
                         </div>
                     </div>
                 </div>

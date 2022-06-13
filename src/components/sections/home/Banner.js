@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 import bannerdata from '../../../data/banner.json';
+import HeaderComponent from '../../../helper/navhelper';
+import { Button } from 'react-bootstrap';
 
 // install Swiper components
 SwiperCore.use([Navigation]);
@@ -19,8 +21,9 @@ const settings = {
     spaceBetween: 0,
     loop: true
 };
-class Banner extends Component {
+class Banner extends HeaderComponent {
     render() {
+        console.log(this.state.toggleModal);
         return (
             <>
                 <Swiper className="about-us-slider swiper-container p-relative slider-banner-1" {...settings} navigation>
@@ -35,7 +38,8 @@ class Banner extends Component {
                                                 {/* <h5 className="text-white">{item.subtitle}</h5> */}
                                                 <h5 className="text-white fw-300" dangerouslySetInnerHTML={{ __html: item.title }} />
                                                 {/* <p className="text-white fw-400">{item.text}</p> */}
-                                                <Link to="/about" className="btn-solid with-line btn-big mt-20 mr-1"><span>Learn More <i className="fas fa-caret-right" /></span></Link>
+                                                {/* <Link onClick={this.toggleNav} className={this.state.navmethod ? `btn-solid with-line btn-big mt-20 mr-1 open` : "btn-solid with-line btn-big mt-20 mr-1"} ><span>SCHEDULE AN EVALUATION<i className="fas fa-caret-right" /></span></Link> */}
+                                                <Button className={this.state.toggleModal ? "open" : ""} onClick={this.toggleModalFunc} ><span>SCHEDULE AN EVALUATION<i className="fas fa-caret-right" /></span></Button>
                                                 <Link to="/shop-left" className="border-butn mt-20 ml-1"><span>Shop Now</span></Link>
                                             </div>
                                         </div>

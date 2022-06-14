@@ -23,7 +23,6 @@ const settings = {
 };
 class Banner extends HeaderComponent {
     render() {
-        console.log(this.state.toggleModal);
         return (
             <>
                 <Swiper className="about-us-slider swiper-container p-relative slider-banner-1" {...settings} navigation>

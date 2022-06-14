@@ -129,7 +129,7 @@ class Header extends HeaderComponent {
                                                         </Form>
                                                         <span class="" style={{ width: "100%", backgroundColor:"#28a745", height:"12px", position:"absolute"}} ></span>
 
-                                                        <Button variant="success" className=' position-absolute end-0 p-3' onClick={this.toggleModalFunc}  >Close</Button>
+                                                        <Button variant="success" className=' position-absolute end-0 p-2' onClick={this.toggleModalFunc}  >Close</Button>
                                                     </div>
                                                 </div>
                                             </div>

@@ -23,6 +23,8 @@ class Header extends HeaderComponent {
     }
     render() {
         const stickyheader = this.state.isTop ? 'sticky' : '';
+        const scrollable = window.pageYOffset;
+        // console.log(scrollable);
         const isModalIsOpen = this.state.toggleModal
         return (
             <header className={"header " + stickyheader}>
@@ -105,6 +107,9 @@ class Header extends HeaderComponent {
                                                             <Form.Group className="mb-3" controlId="formBasicPassword">
                                                                 <Form.Control type="number " placeholder="Zip Code" />
                                                             </Form.Group>
+                                                            <Form.Group className="mb-3">
+                                                                <Form.Control type="number " placeholder="Child Age" />
+                                                            </Form.Group>
                                                             {/* <Form.Text > */}
                                                             <Form.Text className="d-flex flex-row" placement="right">
                                                                 <DropdownButton title="Child Grade" variant="success">
@@ -116,21 +121,15 @@ class Header extends HeaderComponent {
                                                                     <Dropdown.Item href="#/action-6">6</Dropdown.Item>
                                                                     <Dropdown.Item href="#/action-7">7</Dropdown.Item>
                                                                 </DropdownButton>
-                                                                {/* </Form.Text> */}
-                                                                {/* <Form.Text > */}
-                                                                <DropdownButton title="Child Age" variant="success" className='ml-3'>
-                                                                    <Dropdown.Item href="#/action-1">1</Dropdown.Item>
-                                                                    <Dropdown.Item href="#/action-2">2</Dropdown.Item>
-                                                                    <Dropdown.Item href="#/action-3">3</Dropdown.Item>
-                                                                    <Dropdown.Item href="#/action-4">4</Dropdown.Item>
-                                                                    <Dropdown.Item href="#/action-5">5</Dropdown.Item>
-                                                                    <Dropdown.Item href="#/action-6">6</Dropdown.Item>
-                                                                    <Dropdown.Item href="#/action-7">7</Dropdown.Item>
-                                                                </DropdownButton>
+
                                                             </Form.Text>
-                                                            {/* </Form.Text> */}
+
+
+                                                            <Button variant="success" className='mt-2'>SUBMIT</Button>
                                                         </Form>
-                                                        <Button variant="success" className={''} onClick={this.toggleModalFunc}  >Close</Button>
+                                                        <span class="" style={{ width: "100%", backgroundColor:"#28a745", height:"12px", position:"absolute"}} ></span>
+
+                                                        <Button variant="success" className=' position-absolute end-0 p-3' onClick={this.toggleModalFunc}  >Close</Button>
                                                     </div>
                                                 </div>
                                             </div>

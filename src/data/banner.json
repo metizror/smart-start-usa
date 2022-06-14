@@ -1,29 +1,30 @@
 [
-    {
-        "id":1,
-        "image":"assets/img/banner/banner1.jpg",
-        "title":"Our mission is to provide all students with various opportunities to develop their   <span className='text-dark-red'>academic skills and conquer all obstacles  </span> they encounter on their Academic Roads.",
-        "subtitle":"Around the world.",
-        "text":"To to provide all students with various opportunities to develop their academic skills and conquer all obstacles they encounter on their academic roads.",
-        "position":"col-lg-12",
-        "extraclass":"right-side-content far-right"
-    },
-    {
-        "id":2,
-        "image":"assets/img/banner/banner2.jpg",
-        "title":"Discover our <span className='text-dark-red'>reimagined</span> Gallery",
-        "subtitle":"Around the world.",
-        "text":"Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfishf",
-        "position":"col-lg-8",
-        "extraclass":"right-side-content text-center"
-    },
-    {
-        "id":3,
-        "image":"assets/img/banner/banner3.jpg",
-        "title":"Discover our <span className='text-dark-red'>reimagined</span> Gallery",
-        "subtitle":"Around the world.",
-        "text":"Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfishf",
-        "position":"col-lg-12",
-        "extraclass":"left-side-content text-right"
-    }
+  {
+    "id": 1,
+    "image": "assets/img/banner/banner1.jpg",
+    "title": "Smart Start USA is the<span class='text-dark-red'>Best Educational</span> Brand!",
+
+    "subtitle": "Around the world.",
+    "text": "Smart Start USA is an innovative after-school program designed for elementary, middle, and high school students. We offer interactive online courses that prepare students to excel in major academic areas and successfully conquer national academic contests, Regents Examinations, SAT, ISEE, and other essential assessments.",
+    "position": "col-lg-12",
+    "extraclass": "right-side-content far-right"
+  },
+  {
+    "id": 2,
+    "image": "assets/img/banner/banner2.jpg",
+    "title": "Discover our <span className='text-dark-red'>reimagined</span> Gallery",
+    "subtitle": "Around the world.",
+    "text": "Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfishf",
+    "position": "col-lg-8",
+    "extraclass": "right-side-content text-center"
+  },
+  {
+    "id": 3,
+    "image": "assets/img/banner/banner3.jpg",
+    "title": "Discover our <span className='text-dark-red'>reimagined</span> Gallery",
+    "subtitle": "Around the world.",
+    "text": "Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfishf",
+    "position": "col-lg-12",
+    "extraclass": "left-side-content text-right"
+  }
 ]

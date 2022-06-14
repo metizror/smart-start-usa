@@ -8,6 +8,9 @@ import Donationbox from './Donationbox';
 import Productbox from './Productbox';
 // import Advertisement from '../../layouts/Advertisement';
 import Testimonials from '../../layouts/Testimonials';
+import OurWorks from './OurWorks';
+import JoinSmartStartUSA from './JoinSmartStartUSA.js';
+
 // import Videocta from '../../layouts/Videocta';
 // import Donationcampaigns from './Donationcampaigns';
 // import Blogpost from './Blogpost';
@@ -18,18 +21,20 @@ class Content extends Component {
         return ( 
             <Fragment>
                 <Banner/>
-                {/* <Servicetype/> */}
+                <Bestsellers />
+                <OurWorks />
                 <Team/>
+                {/* <Servicetype/> */}
                 {/* <Videocta/> */}
-                <Donationbox/> 
-                <Productbox/>
+                {/* <Donationbox/> 
+                <Productbox/> */}
                 {/* <Advertisement/> */}
                 {/* <Donationcampaigns/> */}
                 {/* <Calendar/> */}
-                <Gallery/>
+                {/* <Gallery /> */}
                 <Testimonials/>
+                <JoinSmartStartUSA />
                 {/* <Blogpost/> */}
-                <Bestsellers/>
             </Fragment>
         );
     }

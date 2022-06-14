@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 class Breadcrumbs extends Component {
     render() {
         return (
-            <div className="breadcrumb-area" style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + "/assets/img/innerbanner.jpg)" }}>
+            // <div className="breadcrumb-area" style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + "/assets/img/innerbanner.jpg)" }}>
+            <div className="breadcrumb-area" style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + "/assets/img/banner/banner1.jpg)" }}>
                 <div className="overlay overlay-bg" />
                 <div className="container">
                     <div className="breadcrumb-content">

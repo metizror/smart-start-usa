@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 export class JoinSmartStartUSA extends Component {
     render() {
         return (
-            <section className="feedback-area-two section-padding bg-secondary " style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + "/assets/img/footer-bg.png)" }}>
-                <div className="container-fluid custom-container">
+            <div className=" section-padding bg-secondary" >
+                <div className="">
                     <div className="row">
                         <div className="col-12">
                             <div className="section-header-left text-center">
@@ -15,7 +15,7 @@ export class JoinSmartStartUSA extends Component {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         )
     }
 }

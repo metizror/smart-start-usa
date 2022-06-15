@@ -38,7 +38,7 @@ class Team extends Component {
                     <div className="row">
                         <div className="col-12">
                             <div className="section-header-left title">
-                                <h3 className="text-light-black header-title text-light-black header-title our-program-text">Our Courses</h3>
+                                <h3 className="text-light-black header-title text-light-black header-title our-program-text">OUR COURSES</h3>
 
                                 <span className="fs-16 align-self-center"><Link to="/story-grid">See All</Link></span>
                             </div>

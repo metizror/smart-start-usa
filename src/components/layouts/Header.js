@@ -26,6 +26,8 @@ class Header extends HeaderComponent {
         const scrollable = window.pageYOffset;
         // console.log(scrollable);
         const isModalIsOpen = this.state.toggleModal
+        const scheduleToggle = this.state.scheduleToggle
+        console.log(isModalIsOpen );
         return (
             <header className={"header " + stickyheader}>
                 <div className="container-fluid custom-container">
@@ -125,9 +127,9 @@ class Header extends HeaderComponent {
                                                             </Form.Text>
 
 
-                                                            <Button variant="success" className='mt-2'>SUBMIT</Button>
+                                                            <Button variant="success" className='mt-4'>SUBMIT</Button>
                                                         </Form>
-                                                        <span class="" style={{ width: "100%", backgroundColor:"#28a745", height:"12px", position:"absolute"}} ></span>
+                                                        <span class="border-width-line"></span>
 
                                                         <Button variant="success" className=' position-absolute end-0 p-4' onClick={this.toggleModalFunc}  >Close</Button>
                                                     </div>
@@ -137,7 +139,11 @@ class Header extends HeaderComponent {
                                             {/* <GetStartedSlider isModalIsOpen={isModalIsOpen} toggleModalFunc={this.toggleModalFunc} /> */}
                                         </ul>
                                         <div className='get-started-btn' >
-                                            <Button variant="success" style={{ padding: "17px" }} className={isModalIsOpen ? 'open' : ''} onClick={this.toggleModalFunc}>Get Started</Button>
+                                            <Button variant="success"
+                                                style={{ padding: "17px" }}
+                                                className={isModalIsOpen ? 'open' : ''}
+                                                ref={this.state.toggleModal}
+                                                onClick={this.toggleModalFunc}>Get Started</Button>
                                         </div>
                                     </nav>
 

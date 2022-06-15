@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 import bannerdata from '../../../data/banner.json';
 import HeaderComponent from '../../../helper/navhelper';
-import { Button } from 'react-bootstrap';
+import { Button, Dropdown, DropdownButton, Form } from 'react-bootstrap';
+import Header from '../../layouts/Header';
 
 // install Swiper components
 SwiperCore.use([Navigation]);
@@ -23,6 +24,7 @@ const settings = {
 };
 class Banner extends HeaderComponent {
     render() {
+        // console.log(this.state.toggleModal)
         return (
             <>
                 <Swiper className="about-us-slider swiper-container p-relative slider-banner-1" {...settings} navigation>
@@ -34,10 +36,21 @@ class Banner extends HeaderComponent {
                                     <div className="row justify-content-center">
                                         <div className={"align-self-center " + item.position}>
                                             <div className={item.extraclass}>
-                                             
+
                                                 <h1 className="text-white fw-600" dangerouslySetInnerHTML={{ __html: item.title }} />
                                                 <p className="text-white fw-400">{item.text}</p>
-                                                <Link onClick={this.toggleNav} className={this.state.navmethod ?  "open btn-solid with-line btn-big mt-20 mr-1"  : "btn-solid with-line btn-big mt-20 mr-1"} ><span>SCHEDULE AN EVALUATION<i className="fas fa-caret-right" /></span></Link>
+
+                                                <button
+
+                                                    // onClick={() => this.scheduleToggleFunc}
+                                                    // ref={this.input}
+                                                    // ref={(input) => (this.inputElement = input)}
+                                                    onClick={this.toggleModalFunc}
+                                                    className={this.state.toggleModal ? "btn-success with-line btn-big mt-20 mr-1" : "form-div btn-success with-line btn-big mt-20 mr-1"}
+                                                ><span
+                                                // ref={this.input}
+                                                >SCHEDULE AN EVALUATION<i className="fas fa-caret-right" /></span>
+                                                </button>
                                                 {/* <Button className={this.state.toggleModal ? "open" : ""} onClick={this.toggleModalFunc} ><span>SCHEDULE AN EVALUATION<i className="fas fa-caret-right" /></span></Button> */}
                                                 <Link to="/shop-left" className="border-butn mt-20 ml-1"><span>Shop Now</span></Link>
                                             </div>

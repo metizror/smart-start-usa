@@ -2897,6 +2897,13 @@ footer .footer-links .contact-info li a span {
   /* transition: all 0.5s ease-in-out; */
 }
 
+.parent-div-modal .border-width-line {
+  width: 100%;
+  background-color: #28a745;
+  height: 12px;
+  position: absolute;
+}
+
 /*======================
 3. Blog Grid
 ========================*/
@@ -5453,7 +5460,8 @@ footer .footer-links .contact-info li a span {
   top: 0;
 }
 .subscribe-content button.button span {
-  background: #13130d;
+  /* background: #13130d; */
+  background: #28a745;
   border-left: 1px solid #13130d;
   color: #c9a050;
   font-size: 18px;
@@ -5479,6 +5487,7 @@ footer .footer-links .contact-info li a span {
   background-position: center;
   position: relative;
 }
+
 .page-404:before {
   content: "";
   display: block;

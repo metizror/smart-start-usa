@@ -5,10 +5,14 @@ class HeaderComponent extends Component {
         super(props);
         this.state = {
             navmethod: false,
-            toggleModal: false
+            toggleModal: false, 
+            scheduleToggle:false
         };
+        this.input = React.createRef();
         this.toggleNav = this.toggleNav.bind(this);
         this.toggleModalFunc = this.toggleModalFunc.bind(this);
+        this.scheduleToggleFunc = this.scheduleToggleFunc.bind(this);
+        // console.log(this.state.scheduleToggle);
     }
     // Navigation
     toggleNav() {
@@ -16,8 +20,15 @@ class HeaderComponent extends Component {
             navmethod: !this.state.navmethod
         });
     }
+    scheduleToggleFunc() {
+        console.log(this.state.scheduleToggle);
+        this.setState({
+            scheduleToggle: !this.state.scheduleToggle
+        })
+    }
     // ToggleModal click get started
-    toggleModalFunc() {
+    toggleModalFunc(e) {
+        console.log( "Clicked get staretyed",  this.state.toggleModal);
         this.setState({
             toggleModal: !this.state.toggleModal
         });

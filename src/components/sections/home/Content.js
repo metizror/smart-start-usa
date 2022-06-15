@@ -17,12 +17,15 @@ import JoinSmartStartUSA from './JoinSmartStartUSA.js';
 // import Calendar from './Calendar';
 
 class Content extends Component {
+    scheduleToggleHanlder(data) {
+        console.log();
+    }
     render() {
         return ( 
             <Fragment>
-                <Banner/>
+                <Banner scheduleToggleHanlder={this.scheduleToggleHanlder }/>
                 <Bestsellers />
-                <OurWorks />
+                {/* <OurWorks /> */}
                 <Team/>
                 {/* <Servicetype/> */}
                 {/* <Videocta/> */}
@@ -33,7 +36,7 @@ class Content extends Component {
                 {/* <Calendar/> */}
                 {/* <Gallery /> */}
                 <Testimonials/>
-                <JoinSmartStartUSA />
+                {/* <JoinSmartStartUSA /> */}
                 {/* <Blogpost/> */}
             </Fragment>
         );

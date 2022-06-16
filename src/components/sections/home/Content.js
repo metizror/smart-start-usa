@@ -23,7 +23,7 @@ class Content extends Component {
     };
 
     scheduleToggleHanlder = (childData) => {
-        this.setState({ isModal: childData }, this.props.parentCallback(this.state.isModal))
+        this.setState({ isModal: childData },() => this.props.parentCallback(this.state.isModal))
     };
     render() {
         return (

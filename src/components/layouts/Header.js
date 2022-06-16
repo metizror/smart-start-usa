@@ -17,19 +17,25 @@ class Header extends HeaderComponent {
     }
     addNewLinkHandler(forth_item) {
         const isLink = forth_item.link.search('mylearnworlds') == -1 ? false : true
+        // console.log(forth_item.link.search('mylearnworlds'));
         if (!isLink) {
             return forth_item;
         } else {
+            console.log('falsess');
             return window.location.href = forth_item.link
         }
     }
+
     UNSAFE_componentWillReceiveProps(nextProps) {
+        console.log("Component received new props", nextProps);
         // if (nextProps.parentCallback === true) {
         //     this.toggleModalFunc();
         // }
-        if (this.props.isModal?.childData === true) {
+        if (this.props.isModal?.childData == true) {
             this.setState({ scheduleModalIsOpen: true })
+
             this.toggleModalFunc();
+            // this.toggleModalFunc()
         }
     }
     render() {
@@ -37,8 +43,11 @@ class Header extends HeaderComponent {
         //     this.setState({ scheduleModalIsOpen: true })
         //     // this.toggleModalFunc()
         // }
+        console.log(this.props.isModal);
+        // console.log(this.props.isModal.childData);
         const stickyheader = this.state.isTop ? 'sticky' : '';
         const scrollable = window.pageYOffset;
+        // console.log(scrollable);
         const isModalIsOpen = this.state.toggleModal
         const scheduleToggle = this.state.scheduleToggle
         return (

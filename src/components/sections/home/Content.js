@@ -23,13 +23,25 @@ class Content extends Component {
     };
 
     scheduleToggleHanlder = (childData) => {
-        this.setState({ isModal: childData },() => this.props.parentCallback(this.state.isModal))
+        this.setState({ isModal: childData }, () => {
+            // this.saySomething();
+            this.homeModalToggle()
+
+
+        });
+    };
+    homeModalToggle = () => {
+        // const onTriggerdata = () => {
+            this.props.parentCallback(this.state.isModal);
+        // };
+        // onTriggerdata();
     };
     render() {
+        console.log(this.state.isModal);
         return (
             <Fragment>
                 <Banner
-
+                    
                     scheduleToggleHanlder={this.scheduleToggleHanlder}
                 />
                 <Team />

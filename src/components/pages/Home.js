@@ -14,7 +14,6 @@ class Home extends Component {
     };
 
     handleToggleModal = (childData) => {
-        console.log(childData);
         this.setState({ isModalOpen: childData })
     }
     
@@ -30,9 +29,9 @@ class Home extends Component {
                     />
                 </MetaTags>
                 <Topbar />
-                <Header />
+                <Header isModal={this.state.isModalOpen} />
                 <Content 
-                 parentToggleCallback={this.handleToggleModal } 
+                    parentCallback={this.handleToggleModal } 
                 />
                 <Newsletter layout="" />
                 <Footer />

@@ -23,15 +23,15 @@ const settings = {
     loop: true
 };
 class Banner extends HeaderComponent {
-    componentDidMount() {
-        const onTriggerdata = () => {
-            this.props.scheduleToggleHanlder({ childData: this.state.toggleModal });
-        };
-        onTriggerdata();
-    } 
+    // componentDidMount() {
+    // componentDidMount() {
 
+
+    onTriggerdata = () => {
+        this.props.scheduleToggleHanlder({ childData: true });
+        // this.toggleModalFunc()
+    };
     render() {
-        // console.log(this.state.toggleModal)
         return (
             <>
                 <Swiper className="about-us-slider swiper-container p-relative slider-banner-1" {...settings} navigation>
@@ -52,7 +52,7 @@ class Banner extends HeaderComponent {
                                                     // onClick={() => this.scheduleToggleFunc}
                                                     // ref={this.input}
                                                     // ref={(input) => (this.inputElement = input)}
-                                                    onClick={this.toggleModalFunc}
+                                                    onClick={this.onTriggerdata}
                                                     className={this.state.toggleModal ? "btn-success with-line btn-big mt-20 mr-1" : "form-div btn-success with-line btn-big mt-20 mr-1"}
                                                 ><span
                                                 // ref={this.input}

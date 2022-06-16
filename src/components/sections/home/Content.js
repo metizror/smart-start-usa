@@ -17,46 +17,38 @@ import Blogpost from './Blogpost';
 import Calendar from './Calendar';
 
 class Content extends Component {
-    // scheduleToggleHanlder(childData) {
-    //     // console.log(childData);
-    //     // // this.setState({ isModalOpen: !childData })
-    //     // console.log(this.props);
-    //     // console.log(childData);
-    // }
-    
-    scheduleToggleHanlder = (child) => {
-        console.log(this.props);
-        this.props.parentToggleCallback( child)  
-        // if (this.state.name) {
-        //     const onTriggerdata = () => {
-        //         this.props.parentCallback(this.state.name);
-        //     };
-        //     onTriggerdata();
-        // }
+
+    state = {
+        isModal: false,
+    };
+
+    scheduleToggleHanlder = (childData) => {
+        this.setState({ isModal: childData }, this.props.parentCallback(this.state.isModal))
     };
     render() {
-    return (
-        <Fragment>
-            <Banner
-                scheduleToggleHanlder={this.scheduleToggleHanlder}
-            />
-            <Team />
-            {/* <OurWorks /> */}
-            <Donationbox />
-            <Productbox />
-            {/* <Servicetype/> */}
-            {/* <Videocta/> */}
-            {/* <Advertisement/> */}
-            {/* <Donationcampaigns/> */}
-            {/* <Calendar/> */}
-            <Gallery />
-            <Testimonials />
-            <Bestsellers />
-            {/* <JoinSmartStartUSA /> */}
-            {/* <Blogpost/> */}
-        </Fragment>
-    );
-}
+        return (
+            <Fragment>
+                <Banner
+
+                    scheduleToggleHanlder={this.scheduleToggleHanlder}
+                />
+                <Team />
+                {/* <OurWorks /> */}
+                <Donationbox />
+                <Productbox />
+                {/* <Servicetype/> */}
+                {/* <Videocta/> */}
+                {/* <Advertisement/> */}
+                {/* <Donationcampaigns/> */}
+                {/* <Calendar/> */}
+                <Gallery />
+                <Testimonials />
+                <Bestsellers />
+                {/* <JoinSmartStartUSA /> */}
+                {/* <Blogpost/> */}
+            </Fragment>
+        );
+    }
 }
 
 export default Content;

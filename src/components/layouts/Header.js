@@ -11,23 +11,36 @@ import { Button, Dropdown, DropdownButton, Form } from 'react-bootstrap';
 
 
 class Header extends HeaderComponent {
+
+    state = {
+        scheduleModalIsOpen: false
+    }
     addNewLinkHandler(forth_item) {
         const isLink = forth_item.link.search('mylearnworlds') == -1 ? false : true
-        // console.log(forth_item.link.search('mylearnworlds'));
         if (!isLink) {
             return forth_item;
         } else {
-            console.log('falsess');
             return window.location.href = forth_item.link
         }
     }
+    UNSAFE_componentWillReceiveProps(nextProps) {
+        // if (nextProps.parentCallback === true) {
+        //     this.toggleModalFunc();
+        // }
+        if (this.props.isModal?.childData === true) {
+            this.setState({ scheduleModalIsOpen: true })
+            this.toggleModalFunc();
+        }
+    }
     render() {
+        // if (this.props.isModal?.childData == true) {
+        //     this.setState({ scheduleModalIsOpen: true })
+        //     // this.toggleModalFunc()
+        // }
         const stickyheader = this.state.isTop ? 'sticky' : '';
         const scrollable = window.pageYOffset;
-        // console.log(scrollable);
         const isModalIsOpen = this.state.toggleModal
         const scheduleToggle = this.state.scheduleToggle
-        console.log(isModalIsOpen );
         return (
             <header className={"header " + stickyheader}>
                 <div className="container-fluid custom-container">

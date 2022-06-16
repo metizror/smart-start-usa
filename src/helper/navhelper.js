@@ -12,29 +12,21 @@ class HeaderComponent extends Component {
         this.toggleNav = this.toggleNav.bind(this);
         this.toggleModalFunc = this.toggleModalFunc.bind(this);
         this.scheduleToggleFunc = this.scheduleToggleFunc.bind(this);
-        // console.log(this.state.scheduleToggle);
     }
 
-    // componentDidUpdate(prevProps, prevState, snapshot){
-    //     // console.log(prevProps, prevState, snapshot )
-    //     // // this.updatedData()
-    //     // console.log(this.state.toggleModal);
-    // }
-    // Navigation
+   
     toggleNav() {
         this.setState({
             navmethod: !this.state.navmethod
         });
     }
     scheduleToggleFunc() {
-        // console.log(this.state.toggleModal);
         this.setState({
             scheduleToggle: !this.state.scheduleToggle
         })
     }
     // ToggleModal click get started
     toggleModalFunc(e) {
-        console.log( "Clicked get staretyed",  this.state.toggleModal);
         this.setState({
             toggleModal: !this.state.toggleModal
         });

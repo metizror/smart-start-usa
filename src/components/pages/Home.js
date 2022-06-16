@@ -9,6 +9,16 @@ import Content from '../sections/home/Content';
 const pagelocation = "Homepage";
 
 class Home extends Component {
+    state = {
+        isModalOpen: false,
+    };
+
+    handleToggleModal = (childData) => {
+        console.log(childData);
+        this.setState({ isModalOpen: childData })
+    }
+    
+
     render() {
         return (
             <Fragment>
@@ -21,7 +31,9 @@ class Home extends Component {
                 </MetaTags>
                 <Topbar />
                 <Header />
-                <Content />
+                <Content 
+                 parentToggleCallback={this.handleToggleModal } 
+                />
                 <Newsletter layout="" />
                 <Footer />
             </Fragment>

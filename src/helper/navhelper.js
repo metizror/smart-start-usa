@@ -14,6 +14,12 @@ class HeaderComponent extends Component {
         this.scheduleToggleFunc = this.scheduleToggleFunc.bind(this);
         // console.log(this.state.scheduleToggle);
     }
+
+    // componentDidUpdate(prevProps, prevState, snapshot){
+    //     // console.log(prevProps, prevState, snapshot )
+    //     // // this.updatedData()
+    //     // console.log(this.state.toggleModal);
+    // }
     // Navigation
     toggleNav() {
         this.setState({
@@ -21,7 +27,7 @@ class HeaderComponent extends Component {
         });
     }
     scheduleToggleFunc() {
-        console.log(this.state.scheduleToggle);
+        // console.log(this.state.toggleModal);
         this.setState({
             scheduleToggle: !this.state.scheduleToggle
         })

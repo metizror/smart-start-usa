@@ -23,6 +23,13 @@ const settings = {
     loop: true
 };
 class Banner extends HeaderComponent {
+    componentDidMount() {
+        const onTriggerdata = () => {
+            this.props.scheduleToggleHanlder({ childData: this.state.toggleModal });
+        };
+        onTriggerdata();
+    } 
+
     render() {
         // console.log(this.state.toggleModal)
         return (

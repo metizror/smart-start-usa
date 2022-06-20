@@ -13,7 +13,7 @@ import { Button, Dropdown, DropdownButton, Form } from 'react-bootstrap';
 class Header extends HeaderComponent {
 
     state = {
-        scheduleModalIsOpen: false
+        scheduleModalIsOpen: false, 
     }
     addNewLinkHandler(forth_item) {
         const isLink = forth_item.link.search('mylearnworlds') == -1 ? false : true
@@ -25,20 +25,24 @@ class Header extends HeaderComponent {
             return window.location.href = forth_item.link
         }
     }
-
     UNSAFE_componentWillReceiveProps(nextProps) {
-        console.log("Component received new props", nextProps);
+        console.log("Component received new props", nextProps.isModal.childData);
         // if (nextProps.parentCallback === true) {
         //     this.toggleModalFunc();
         // }
-        if (this.props.isModal?.childData == true) {
-            this.setState({ scheduleModalIsOpen: true })
+        // console.log(nextProps);
+        if (nextProps.isModal.childData == true)   {
+            // this.setState({ scheduleModalIsOpen: true })
 
-            this.toggleModalFunc();
-            // this.toggleModalFunc()
+            // this.toggleModalFunc();
+            this.setState({ scheduleModalIsOpen: true  })
+            this.toggleModalFunc()
+            this.setState({ scheduleModalIsOpen: false  })
+            
         }
     }
     render() {
+        // console.log("-----------------------------", this.props.isModal);
         // if (this.props.isModal?.childData == true) {
         //     this.setState({ scheduleModalIsOpen: true })
         //     // this.toggleModalFunc()
@@ -51,8 +55,9 @@ class Header extends HeaderComponent {
         const isModalIsOpen = this.state.toggleModal
         const scheduleToggle = this.state.scheduleToggle
         return (
-            <header className={"header " + stickyheader}>
-                <div className="container-fluid custom-container">
+            <header className="header sticky">
+            {/* <header className={"header " + stickyheader}> */}
+                <div className="container-fluid custom-container">``
                     <div className="row">
                         <div className="col-12">
                             <div className="navigation">
@@ -153,7 +158,7 @@ class Header extends HeaderComponent {
                                                         </Form>
                                                         <span class="border-width-line"></span>
 
-                                                        <Button variant="success" className=' position-absolute end-0 p-4' onClick={this.toggleModalFunc}  >Close</Button>
+                                                        <Button variant="success" className=' position-absolute end-0 p-4' onClick={this.toggleModalFunc }  >Close</Button>
                                                     </div>
                                                 </div>
                                             </div>

@@ -55,8 +55,8 @@ class Header extends HeaderComponent {
         const isModalIsOpen = this.state.toggleModal
         const scheduleToggle = this.state.scheduleToggle
         return (
-            <header className="header sticky">
-            {/* <header className={"header " + stickyheader}> */}
+            // <header className="header sticky">
+            <header className={"header sticky" }>
                 <div className="container-fluid custom-container">``
                     <div className="row">
                         <div className="col-12">

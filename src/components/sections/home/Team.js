@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 import teamblock from '../../../data/story/story.json';
+import UserContext from '../../../Context/UserContext';
 
 // install Swiper components
 SwiperCore.use([Navigation]);
@@ -31,7 +32,12 @@ const settings = {
     }
 }
 class Team extends Component {
+    static contextType = UserContext
+
     render() {
+        const { user, setUser } = this.context     // USE OF CONTEXT API
+        // console.log(this.context);
+
         return (
             <section className="browse-cat bg-theme-primary section-padding">
                 <div className="container-fluid custom-container">
@@ -39,7 +45,17 @@ class Team extends Component {
                         <div className="col-12">
                             <div className="section-header-left title">
                                 <h3 className="text-light-black header-title text-light-black header-title our-program-text">OUR COURSES</h3>
-
+                                <div>
+                                    <button
+                                        onClick={() => {
+                                            const newUser = { user: 'abhinav', isModalOpen: !user.isModalOpen }  // USE OF CONTEXT API
+                                            setUser(newUser)
+                                        }}
+                                    >
+                                        Update User
+                                    </button>
+                                    <p>{`Current User: ${(console.log(user))}`}</p>
+                                </div>
                                 <span className="fs-16 align-self-center"><Link to="/story-grid">See All</Link></span>
                             </div>
                         </div>

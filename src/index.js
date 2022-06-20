@@ -16,11 +16,18 @@ import './assets/css/font/flaticon.css';
 import './assets/css/pe-icon-7-stroke.css';
 import './assets/css/style.css';
 import './assets/css/responsive.css';
-import './index.css'; 
+import './index.css';
+import { UserProvider } from './Context/UserContext';
+
+// const user = { user: 'Tania', loggedIn: false }
 
 ReactDOM.render(
   <BrowserRouter basename={"/templatemonster/react/nina/"}>
-    <App />
+    <UserProvider
+      // value={user}
+    >
+      <App />
+    </UserProvider>
   </BrowserRouter>,
   document.getElementById('nina')
 );

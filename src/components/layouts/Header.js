@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import navigationmenu from '../../data/navigation.json';
 import { Button, Dropdown, DropdownButton, Form } from 'react-bootstrap';
+import UserContext from '../../Context/UserContext';
 // import { OffcanvasProvider, Trigger, Offcanvas } from 'react-simple-offcanvas'
 // import { GetStartedSlider } from './GetStartedSlider';
 
@@ -11,9 +12,10 @@ import { Button, Dropdown, DropdownButton, Form } from 'react-bootstrap';
 
 
 class Header extends HeaderComponent {
-
+    static contextType = UserContext
+    
     state = {
-        scheduleModalIsOpen: false, 
+        scheduleModalIsOpen: false,
     }
     addNewLinkHandler(forth_item) {
         const isLink = forth_item.link.search('mylearnworlds') == -1 ? false : true
@@ -25,38 +27,23 @@ class Header extends HeaderComponent {
             return window.location.href = forth_item.link
         }
     }
-    UNSAFE_componentWillReceiveProps(nextProps) {
-        console.log("Component received new props", nextProps.isModal.childData);
-        // if (nextProps.parentCallback === true) {
-        //     this.toggleModalFunc();
-        // }
-        // console.log(nextProps);
-        if (nextProps.isModal.childData == true)   {
-            // this.setState({ scheduleModalIsOpen: true })
-
-            // this.toggleModalFunc();
-            this.setState({ scheduleModalIsOpen: true  })
-            this.toggleModalFunc()
-            this.setState({ scheduleModalIsOpen: false  })
-            
-        }
-    }
+  
     render() {
-        // console.log("-----------------------------", this.props.isModal);
-        // if (this.props.isModal?.childData == true) {
-        //     this.setState({ scheduleModalIsOpen: true })
-        //     // this.toggleModalFunc()
-        // }
-        console.log(this.props.isModal);
-        // console.log(this.props.isModal.childData);
+        console.log("-----------", this.context);
+        const { user, setUser } = this.context
+        console.log(user.isModalOpen);
+
         const stickyheader = this.state.isTop ? 'sticky' : '';
         const scrollable = window.pageYOffset;
         // console.log(scrollable);
-        const isModalIsOpen = this.state.toggleModal
+
+        const isModalIsOpenFunc = () => setUser({ isModalOpen: !user.isModalOpen })
+        const isModalIsOpen = user.isModalOpen
+        // const isModalIsOpen = this.state.toggleModal
         const scheduleToggle = this.state.scheduleToggle
         return (
             // <header className="header sticky">
-            <header className={"header sticky" }>
+            <header className={"header sticky"}>
                 <div className="container-fluid custom-container">``
                     <div className="row">
                         <div className="col-12">
@@ -158,7 +145,7 @@ class Header extends HeaderComponent {
                                                         </Form>
                                                         <span class="border-width-line"></span>
 
-                                                        <Button variant="success" className=' position-absolute end-0 p-4' onClick={this.toggleModalFunc }  >Close</Button>
+                                                        <Button variant="success" className=' position-absolute end-0 p-4' onClick={isModalIsOpenFunc}  >Close</Button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -170,7 +157,8 @@ class Header extends HeaderComponent {
                                                 style={{ padding: "17px" }}
                                                 className={isModalIsOpen ? 'open' : ''}
                                                 ref={this.state.toggleModal}
-                                                onClick={this.toggleModalFunc}>Get Started</Button>
+                                                onClick={isModalIsOpenFunc}>Get Started</Button>
+                                                {/* onClick={this.toggleModalFunc}>Get Started</Button> */}
                                         </div>
                                     </nav>
 

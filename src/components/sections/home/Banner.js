@@ -6,6 +6,7 @@ import bannerdata from '../../../data/banner.json';
 import HeaderComponent from '../../../helper/navhelper';
 import { Button, Dropdown, DropdownButton, Form } from 'react-bootstrap';
 import Header from '../../layouts/Header';
+import UserContext from '../../../Context/UserContext';
 
 // install Swiper components
 SwiperCore.use([Navigation]);
@@ -23,8 +24,8 @@ const settings = {
     loop: true
 };
 class Banner extends HeaderComponent {
-    // componentDidMount() {
-    // componentDidMount() {
+    static contextType = UserContext
+
 
 
     onTriggerdata = () => {
@@ -32,6 +33,9 @@ class Banner extends HeaderComponent {
         // this.toggleModalFunc()
     };
     render() {
+        const { user, setUser } = this.context
+        const isModalIsOpenFunc = () => setUser({ isModalOpen: !user.isModalOpen })
+        const isModalIsOpen = user.isModalOpen
         return (
             <>
                 <Swiper className="about-us-slider swiper-container p-relative slider-banner-1" {...settings} navigation>
@@ -52,7 +56,8 @@ class Banner extends HeaderComponent {
                                                     // onClick={() => this.scheduleToggleFunc}
                                                     // ref={this.input}
                                                     // ref={(input) => (this.inputElement = input)}
-                                                    onClick={this.onTriggerdata}
+                                                    // onClick={this.onTriggerdata}
+                                                    onClick={isModalIsOpenFunc}
                                                     className={this.state.toggleModal ? "btn-success with-line btn-big mt-20 mr-1" : "form-div btn-success with-line btn-big mt-20 mr-1"}
                                                 ><span
                                                 // ref={this.input}

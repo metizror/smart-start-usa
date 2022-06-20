@@ -5,8 +5,8 @@ class HeaderComponent extends Component {
         super(props);
         this.state = {
             navmethod: false,
-            toggleModal: false, 
-            scheduleToggle:false
+            toggleModal: false,
+            scheduleToggle: false
         };
         this.input = React.createRef();
         this.toggleNav = this.toggleNav.bind(this);
@@ -14,7 +14,8 @@ class HeaderComponent extends Component {
         this.scheduleToggleFunc = this.scheduleToggleFunc.bind(this);
     }
 
-   
+
+
     toggleNav() {
         this.setState({
             navmethod: !this.state.navmethod

@@ -11,7 +11,6 @@ class UserProvider extends Component {
         loggedIn: false,
         isModalOpen: false
     }
-
     // Method to update state
     setUser = (user) => {
         console.log(user);

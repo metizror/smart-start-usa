@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "assets/img/donation/article9.jpg",
+        "image": "assets/img/donation1/b9.jpg",
         "category": [
             1
         ],
@@ -52,7 +52,7 @@
     },
     {
         "id": 2,
-        "image": "assets/img/donation/article8.jpg",
+        "image": "assets/img/donation1/b10.jpg",
         "category": [
             2
         ],
@@ -256,7 +256,7 @@
     },
     {
         "id": 6,
-        "image": "assets/img/donation/article4.jpg",
+        "image": "assets/img/donation1/c12.jpg",
         "category": [
             6
         ],
@@ -307,7 +307,7 @@
     },
     {
         "id": 7,
-        "image": "assets/img/donation/article3.jpg",
+        "image": "assets/img/donation1/c13.jpg",
         "category": [
             7
         ],

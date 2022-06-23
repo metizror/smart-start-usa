@@ -13,12 +13,12 @@ class Gallery extends Popuphelper {
                                 <div className="masonary-text transform-center">
                                     <div className="masonary-text-wrapper">
                                         <div className="icon-box">
-                                            <img src={process.env.PUBLIC_URL + "/assets/img/gallery/thisisimage6.jpg"} className="image-fit" alt="img" />
+                                            <img src={process.env.PUBLIC_URL + "/assets/img/gallery/f24.jpg"} className="image-fit" alt="img" />
                                         </div>
                                         <div className="text-box">
                                             <h3 className="text-custom-white">
                                                 Lorem Ipsum is simply dummy text of the typesetting industry.
-                </h3>
+                                            </h3>
                                             <Link to="#" className="text-custom-white fs-14"><i className="fab fa-instagram mr-2" /> @username</Link>
                                         </div>
                                     </div>
@@ -29,7 +29,8 @@ class Gallery extends Popuphelper {
                             <div className="video-box full-height">
                                 <div className="video_wrapper video_wrapper_full js-videoWrapper">
                                     <div className="videoPoster js-videoPoster">
-                                        <img src={process.env.PUBLIC_URL + "/assets/img/gallery/thisisimage1.jpg"} className="image-fit" alt="#" />
+                                        <img src={process.env.PUBLIC_URL + "/assets/img/gallery/f25.jpg"} className="image-fit" alt="#" />
+                                        {/* <img src={process.env.PUBLIC_URL + "/assets/img/gallery/thisisimage1.jpg"} className="image-fit" alt="#" /> */}
                                         <div className="video-inner video-btn-wrapper"> <a rel={"external"} href={"https://www.youtube.com/watch?v=KH1pcNUTa6U"} className="popup-youtube"><i className="pe-7s-play" /></a></div>
                                     </div>
                                 </div>
@@ -38,29 +39,29 @@ class Gallery extends Popuphelper {
                         <div className="row pt-0">
                             <div className="col-lg-2 col-md-4 col-sm-6">
                                 <div className="masonary-item p-relative">
-                                    <a rel={"external"} href={process.env.PUBLIC_URL + "/assets/img/gallery/thisisimage2.jpg"} className="popup popup-image">
-                                        <img src={process.env.PUBLIC_URL + "/assets/img/gallery/thisisimage2.jpg"} className="image-fit" alt="img" />
+                                    <a rel={"external"} href={process.env.PUBLIC_URL + "/assets/img/gallery/g26.jpg"} className="popup popup-image">
+                                        <img src={process.env.PUBLIC_URL + "/assets/img/gallery/g26.jpg"} className="image-fit" alt="img" />
                                     </a>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-8 col-sm-6">
                                 <div className="masonary-item p-relative">
-                                    <a rel={"external"} href={process.env.PUBLIC_URL + "/assets/img/gallery/thisisimage4.jpg"} className="popup popup-image">
-                                        <img src={process.env.PUBLIC_URL + "/assets/img/gallery/thisisimage4.jpg"} className="image-fit" alt="img" />
+                                    <a rel={"external"} href={process.env.PUBLIC_URL + "/assets/img/gallery/g27.jpg"} className="popup popup-image">
+                                        <img src={process.env.PUBLIC_URL + "/assets/img/gallery/g27.jpg"} className="image-fit" alt="img" />
                                     </a>
                                 </div>
                             </div>
                             <div className="col-lg-2 col-md-4 col-sm-6">
                                 <div className="masonary-item p-relative">
-                                    <a rel={"external"} href={process.env.PUBLIC_URL + "/assets/img/gallery/thisisimage3.jpg"} className="popup popup-image">
-                                        <img src={process.env.PUBLIC_URL + "/assets/img/gallery/thisisimage3.jpg"} className="image-fit" alt="img" />
+                                    <a rel={"external"} href={process.env.PUBLIC_URL + "/assets/img/gallery/g28.jpg"} className="popup popup-image">
+                                        <img src={process.env.PUBLIC_URL + "/assets/img/gallery/g28.jpg"} className="image-fit" alt="img" />
                                     </a>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-8 col-sm-6">
                                 <div className="masonary-item p-relative">
-                                    <a rel={"external"} href={process.env.PUBLIC_URL + "/assets/img/gallery/thisisimage5.jpg"} className="popup popup-image">
-                                        <img src={process.env.PUBLIC_URL + "/assets/img/gallery/thisisimage5.jpg"} className="image-fit" alt="img" />
+                                    <a rel={"external"} href={process.env.PUBLIC_URL + "/assets/img/gallery/g29.jpg"} className="popup popup-image">
+                                        <img src={process.env.PUBLIC_URL + "/assets/img/gallery/g29.jpg"} className="image-fit" alt="img" />
                                     </a>
                                 </div>
                             </div>

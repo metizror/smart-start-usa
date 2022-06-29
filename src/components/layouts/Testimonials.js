@@ -23,7 +23,7 @@ const settings = {
 class Testimonials extends Component {
     render() {
         return (
-            <section className="feedback-area-two section-padding bg-custom-primary" style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + "/assets/img/footer-bg.png)" }}>
+            <section className="feedback-area-two section-padding bg-custom-primary" style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + "/assets/img/testimonia.jpg)" }}>
                 <div className="container-fluid custom-container">
                     <div className="row">
                         <div className="col-12">

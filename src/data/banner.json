@@ -17,14 +17,5 @@
     "text": "Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfishf",
     "position": "col-lg-8",
     "extraclass": "right-side-content text-center"
-  },
-  {
-    "id": 3,
-    "image": "assets/img/banner/banner3.jpg",
-    "title": "Discover our <span className='text-dark-red'>reimagined</span> Gallery",
-    "subtitle": "Around the world.",
-    "text": "Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfishf",
-    "position": "col-lg-12",
-    "extraclass": "left-side-content text-right"
   }
 ]

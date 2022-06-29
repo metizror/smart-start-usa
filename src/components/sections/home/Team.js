@@ -45,18 +45,7 @@ class Team extends Component {
                         <div className="col-12">
                             <div className="section-header-left title">
                                 <h3 className="text-light-black header-title text-light-black header-title our-program-text">OUR COURSES</h3>
-                                <div>
-                                    <button
-                                        onClick={() => {
-                                            const newUser = { user: 'abhinav', isModalOpen: !user.isModalOpen }  // USE OF CONTEXT API
-                                            setUser(newUser)
-                                        }}
-                                    >
-                                        Update User
-                                    </button>
-                                    <p>{`Current User: ${(console.log(user))}`}</p>
-                                </div>
-                                <span className="fs-16 align-self-center"><Link to="/story-grid">See All</Link></span>
+                                
                             </div>
                         </div>
                         <div className="col-12">

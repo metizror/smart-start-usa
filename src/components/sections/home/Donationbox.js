@@ -11,7 +11,7 @@ class Donationbox extends Component {
                     <div className="row">
                         <div className="col-12">
                             <div className="section-header-left">
-                                <h3 className="text-light-black header-title title">Discover The Museum</h3>
+                                <h3  className="text-light-black header-title text-light-black header-title our-program-text">COURSES</h3>
                             </div>
                         </div>
                     </div>

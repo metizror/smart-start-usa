@@ -64,7 +64,7 @@ class Banner extends HeaderComponent {
                                                 >SCHEDULE AN EVALUATION<i className="fas fa-caret-right" /></span>
                                                 </button>
                                                 {/* <Button className={this.state.toggleModal ? "open" : ""} onClick={this.toggleModalFunc} ><span>SCHEDULE AN EVALUATION<i className="fas fa-caret-right" /></span></Button> */}
-                                                <Link to="/shop-left" className="border-butn mt-20 ml-1"><span>Shop Now</span></Link>
+                                                {/* <Link to="/shop-left" className="border-butn mt-20 ml-1"><span>Shop Now</span></Link> */}
                                             </div>
                                         </div>
                                     </div>

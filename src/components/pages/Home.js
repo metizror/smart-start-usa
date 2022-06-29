@@ -28,7 +28,7 @@ class Home extends Component {
                         content="#"
                     />
                 </MetaTags>
-                <Topbar />
+                {/* <Topbar /> */}
                 <Header isModal={this.state.isModalOpen} />
                 <Content 
                     parentCallback={this.handleToggleModal } 

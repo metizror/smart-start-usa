@@ -2,10 +2,10 @@
   {
     "id": 1,
     "image": "assets/img/banner/banner1.jpg",
-    "title": "Smart Start USA is the<span class='text-dark-red'>Best Educational</span> Brand!",
+    "title": "Smart<span class='text-dark-red'> Start </span> USA",
 
     "subtitle": "Around the world.",
-    "text": "Smart Start USA is an innovative after-school program designed for elementary, middle, and high school students. We offer interactive online courses that prepare students to excel in major academic areas and successfully conquer national academic contests, Regents Examinations, SAT, ISEE, and other essential assessments.",
+    "text": "",
     "position": "col-lg-12",
     "extraclass": "right-side-content far-right"
   },

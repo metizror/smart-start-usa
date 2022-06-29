@@ -51,7 +51,7 @@ class Bestsellers extends Component {
 
                                     <div className="product-caption text-center">
 
-                                        <h6 className="product-title fw-500 mt-10"><Link to={"/shop-details/" + item.id} className="our-program-text">{item.title}</Link></h6>
+                                        <h6 className="product-title fw-500 mt-10"><Link to={"/shop-details/" + item.id}  className="our-program-text">{item.title}</Link></h6>
                                     </div>
                                 </div>
                             </div>

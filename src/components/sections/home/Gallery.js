@@ -9,18 +9,12 @@ class Gallery extends Popuphelper {
                 <div className="container-fluid no-padding">
                     <div className="row magnific-gallery">
                         <div className="col-lg-6">
-                            <div className="full-height masonary-box p-relative">
-                                <div className="masonary-text transform-center">
-                                    <div className="masonary-text-wrapper">
-                                        <div className="icon-box">
-                                            <img src={process.env.PUBLIC_URL + "/assets/img/gallery/f24.jpg"} className="image-fit" alt="img" />
-                                        </div>
-                                        <div className="text-box">
-                                            <h3 className="text-custom-white">
-                                                Lorem Ipsum is simply dummy text of the typesetting industry.
-                                            </h3>
-                                            <Link to="#" className="text-custom-white fs-14"><i className="fab fa-instagram mr-2" /> @username</Link>
-                                        </div>
+                            <div className="video-box full-height">
+                                <div className="video_wrapper video_wrapper_full js-videoWrapper">
+                                    <div className="videoPoster js-videoPoster">
+                                        <img src={process.env.PUBLIC_URL + "/assets/img/gallery/f24.jpg"} className="image-fit" alt="#" />
+                                        {/* <img src={process.env.PUBLIC_URL + "/assets/img/gallery/thisisimage1.jpg"} className="image-fit" alt="#" /> */}
+                                        {/* <div className="video-inner video-btn-wrapper"> <a rel={"external"} href={"https://www.youtube.com/watch?v=KH1pcNUTa6U"} className="popup-youtube"><i className="pe-7s-play" /></a></div> */}
                                     </div>
                                 </div>
                             </div>
@@ -31,7 +25,7 @@ class Gallery extends Popuphelper {
                                     <div className="videoPoster js-videoPoster">
                                         <img src={process.env.PUBLIC_URL + "/assets/img/gallery/f25.jpg"} className="image-fit" alt="#" />
                                         {/* <img src={process.env.PUBLIC_URL + "/assets/img/gallery/thisisimage1.jpg"} className="image-fit" alt="#" /> */}
-                                        <div className="video-inner video-btn-wrapper"> <a rel={"external"} href={"https://www.youtube.com/watch?v=KH1pcNUTa6U"} className="popup-youtube"><i className="pe-7s-play" /></a></div>
+                                        {/* <div className="video-inner video-btn-wrapper"> <a rel={"external"} href={"https://www.youtube.com/watch?v=KH1pcNUTa6U"} className="popup-youtube"><i className="pe-7s-play" /></a></div> */}
                                     </div>
                                 </div>
                             </div>

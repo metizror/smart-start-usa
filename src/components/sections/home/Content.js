@@ -15,6 +15,7 @@ import Videocta from '../../layouts/Videocta';
 import Donationcampaigns from './Donationcampaigns';
 import Blogpost from './Blogpost';
 import Calendar from './Calendar';
+import { Descriptions } from './Descriptions';
 
 class Content extends Component {
 
@@ -44,6 +45,7 @@ class Content extends Component {
                     
                     scheduleToggleHanlder={this.scheduleToggleHanlder}
                 />
+                <Descriptions />
                 <Team />
                 {/* <OurWorks /> */}
                 <Donationbox />

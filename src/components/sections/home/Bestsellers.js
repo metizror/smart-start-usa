@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import shopblock from '../../../data/shop/shop.json';
+import programJson from '../../../../src/data/shop/Program.json';
+// import shopblock from '../../../data/shop/shop.json';
 // import { handleOutofStock } from '../../../helper/shophelper';
 import Quickview from '../../layouts/Quickview';
 import {
@@ -38,20 +39,16 @@ class Bestsellers extends Component {
                                 <span className="fs-16"><Link to="/shop-left">See All Bestseller</Link></span>
                             </div>
                         </div>
-                        {shopblock.slice(0, 6).map((item, i) => (
+                        {programJson.slice(0, 6).map((item, i) => (
                             <div className="col-xl-2 col-lg-4 col-md-6 col-sm-6" key={i}>
                                 <div className="product-box mb-md-20">
                                     <div className="product-img">
                                         <Link to={"/shop-details/" + item.id}>
                                             <img src={process.env.PUBLIC_URL + "/" + item.image[0]} className="img-fluid full-width" alt={item.title} />
                                         </Link>
-
-
                                     </div>
-
                                     <div className="product-caption text-center">
-
-                                        <h6 className="product-title fw-500 mt-10"><Link to={"/shop-details/" + item.id}  className="our-program-text">{item.title}</Link></h6>
+                                        <h6 className="product-title fw-500 mt-10"><Link to={"/shop-details/" + item.id} className="our-program-text">{item.title}</Link></h6>
                                     </div>
                                 </div>
                             </div>

@@ -8,8 +8,10 @@ function getPost(id) {
 }
 // Categroy
 function getCategories(items) {
+    console.log("!!!!!!!!!!!!!!!",items);
     var elems = category.filter((item) => {
-        return items.includes(item.id)
+        // console.log("- - -   -    - - ",items, item.id);
+        return   items.includes(item.id)
     });
     return elems;
 }

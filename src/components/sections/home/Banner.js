@@ -51,22 +51,25 @@ class Banner extends HeaderComponent {
                                                 <h1 className="text-white fw-600" dangerouslySetInnerHTML={{ __html: item.title }} />
                                                 <p className="text-white fw-400">{item.text}</p>
 
-                                                <button
-
-                                                    // onClick={() => this.scheduleToggleFunc}
-                                                    // ref={this.input}
-                                                    // ref={(input) => (this.inputElement = input)}
-                                                    // onClick={this.onTriggerdata}
-                                                    onClick={isModalIsOpenFunc}
-                                                    className={this.state.toggleModal ? "btn-success with-line btn-big mt-20 mr-1" : "form-div btn-success with-line btn-big mt-20 mr-1"}
-                                                ><span
-                                                // ref={this.input}
-                                                >SCHEDULE AN EVALUATION<i className="fas fa-caret-right" /></span>
-                                                </button>
                                                 {/* <Button className={this.state.toggleModal ? "open" : ""} onClick={this.toggleModalFunc} ><span>SCHEDULE AN EVALUATION<i className="fas fa-caret-right" /></span></Button> */}
                                                 {/* <Link to="/shop-left" className="border-butn mt-20 ml-1"><span>Shop Now</span></Link> */}
                                             </div>
                                         </div>
+                                    </div>
+                                    <div className="schedule-btn">
+
+                                        <button
+
+                                            // onClick={() => this.scheduleToggleFunc}
+                                            // ref={this.input}
+                                            // ref={(input) => (this.inputElement = input)}
+                                            // onClick={this.onTriggerdata}
+                                            onClick={isModalIsOpenFunc}
+                                            className={this.state.toggleModal ? "btn-success with-line btn-big mt-20 mr-1" : "form-div btn-success with-line btn-big mt-20 mr-1"}
+                                        ><span
+                                        // ref={this.input}
+                                        >SCHEDULE AN EVALUATION<i className="fas fa-caret-right" /></span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>

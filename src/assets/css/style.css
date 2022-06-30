@@ -134,8 +134,8 @@ label {
 }
 .transform-center {
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: 19%;
+  left: -140px;
   right: 0;
   transform: translate(0%, -50%);
   z-index: 1;
@@ -1032,6 +1032,15 @@ span.type-tag {
 }
 .bg-theme-primary {
   background-color: #f8f7f5;
+}
+
+.desc-bg-color{
+  background-color:#0a3161;
+  color: wheat
+}
+.desc-bg-color .desc-text{
+  /* background-color:#0a3161; */
+  color: white;
 }
 .bg-light-green {
   background-color: #c9a050;
@@ -2288,7 +2297,7 @@ header.sticky .main-navigation > nav > .main-menu > .menu-item > a {
   padding: 0 8px;
 }
 .banner-1 .right-side-content h1 {
-  font-size: 60px;
+  font-size: 124px;
   line-height: 1.2;
 }
 /*Advertisement Slider*/
@@ -5190,14 +5199,14 @@ footer .footer-links .contact-info li a span {
 }
 .about-us-slider .slide-item .right-side-content h1,
 .about-us-slider .slide-item .left-side-content h1 {
-  font-size: 60px;
+  font-size: 119px;
   line-height: 1.2;
   text-transform: capitalize;
 }
 .about-us-slider .slide-item .right-side-content {
   transition: all 1s linear;
   transition-delay: 1s;
-  max-width: 580px;
+  /* max-width: 580px; */
   margin: 0 auto;
 }
 .about-us-slider .slide-item .left-side-content {
@@ -6440,7 +6449,7 @@ footer .footer-links .contact-info li a span {
 
 /*Banner */
 .slider-banner-1 {
-  margin-top: 114px;
+  margin-top: 83px;
 }
 
 .slider-banner-1 .swiper-button-prev {

@@ -134,7 +134,7 @@ label {
 }
 .transform-center {
   position: absolute;
-  top: 28%;
+  top: 20%;
   left: -83px;
   right: 0;
   transform: translate(0%, -50%);
@@ -6684,6 +6684,11 @@ footer .footer-links .contact-info li a span {
   color: #c9a050;
   position: absolute;
   left: 5px;
+}
+
+.text-Image {
+padding-left: 14px;
+padding-right: 14px;
 }
 .event-calender .fc-toolbar.fc-header-toolbar {
   display: flex;

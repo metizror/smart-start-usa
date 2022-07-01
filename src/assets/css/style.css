@@ -134,8 +134,8 @@ label {
 }
 .transform-center {
   position: absolute;
-  top: 19%;
-  left: -140px;
+  top: 28%;
+  left: -83px;
   right: 0;
   transform: translate(0%, -50%);
   z-index: 1;
@@ -1034,11 +1034,11 @@ span.type-tag {
   background-color: #f8f7f5;
 }
 
-.desc-bg-color{
-  background-color:#0a3161;
-  color: wheat
+.desc-bg-color {
+  background-color: #0a3161;
+  color: wheat;
 }
-.desc-bg-color .desc-text{
+.desc-bg-color .desc-text {
   /* background-color:#0a3161; */
   color: white;
 }
@@ -5199,9 +5199,14 @@ footer .footer-links .contact-info li a span {
 }
 .about-us-slider .slide-item .right-side-content h1,
 .about-us-slider .slide-item .left-side-content h1 {
-  font-size: 119px;
+  font-size: 83px;
+  /* font-size: 51px; */
   line-height: 1.2;
   text-transform: capitalize;
+}
+
+.title-font {
+  font-size: 59px !important;
 }
 .about-us-slider .slide-item .right-side-content {
   transition: all 1s linear;

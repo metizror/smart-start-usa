@@ -47,9 +47,9 @@ class Banner extends HeaderComponent {
                                     <div className="row justify-content-center">
                                         <div className={"align-self-center " + item.position}>
                                             <div className={item.extraclass}>
-
-                                                <h1 className="text-white fw-600" dangerouslySetInnerHTML={{ __html: item.title }} />
-                                                <p className="text-white fw-400">{item.text}</p>
+                                                <h1 className={`text-white fw-600 ${item.newClass}`} dangerouslySetInnerHTML={{ __html: item.title }} />
+                                                <h3 className={`text-white fw-600 ${item.newClass}`} dangerouslySetInnerHTML={{ __html: item.subtitle }} />
+                                                <p className={`text-white fw-600 `}>{item.text}</p>
 
                                                 {/* <Button className={this.state.toggleModal ? "open" : ""} onClick={this.toggleModalFunc} ><span>SCHEDULE AN EVALUATION<i className="fas fa-caret-right" /></span></Button> */}
                                                 {/* <Link to="/shop-left" className="border-butn mt-20 ml-1"><span>Shop Now</span></Link> */}

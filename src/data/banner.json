@@ -4,10 +4,11 @@
     "image": "assets/img/banner/banner1.jpg",
     "title": "Smart<span class='text-dark-red'> Start </span> USA",
 
-    "subtitle": "Around the world.",
+    "subtitle": "The <span class='text-dark-red'> Best Educational</span> Brand",
     "text": "",
     "position": "col-lg-12",
-    "extraclass": "right-side-content far-right"
+    "extraclass": "right-side-content far-right",
+    "newClass": ""
   },
   {
     "id": 2,
@@ -16,6 +17,7 @@
     "subtitle": "Around the world.",
     "text": "Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfishf",
     "position": "col-lg-8",
-    "extraclass": "right-side-content text-center"
+    "extraclass": "right-side-contents text-center title-font",
+    "newClass": "title-font"
   }
 ]

@@ -8,12 +8,16 @@ export const Descriptions = () => {
                     <div className="row">
                         <div className="col-12">
                             <div className="section-header-left title">
+                                <div className="text-center">
+
+                                    <h1 style={{ color: 'white'}}> Smart Start USA</h1>
 
                                 {/* <h3 className="text-light-black header-title text-light-black header-title our-program-text">OUR COURSES</h3> */}
                                 <h5 className="desc-text">
-                                    <h3> <span class='text-dark-red'>The  Best Educational  Brand</span></h3>
+                                        <h3> <span class='text-dark-red' style={{ color:'#28a745' }}>The  Best Educational  Brand</span></h3>
                                     Smart Start USA is an innovative after-school program designed for elementary, middle, and high school students. We offer interactive online courses that prepare students to excel in major academic areas and successfully conquer national academic contests, Regents Examinations, SAT, ISEE, and other essential assessments.
                                 </h5>
+                                </div>
 
                             </div>
                         </div>

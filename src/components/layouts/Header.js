@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderComponent from '../../helper/navhelper';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import navigationmenu from '../../data/navigation.json';
 import { Button, Dropdown, DropdownButton, Form } from 'react-bootstrap';
 import UserContext from '../../Context/UserContext';
@@ -13,7 +13,7 @@ import UserContext from '../../Context/UserContext';
 
 class Header extends HeaderComponent {
     static contextType = UserContext
-    
+
     state = {
         scheduleModalIsOpen: false,
     }
@@ -27,7 +27,7 @@ class Header extends HeaderComponent {
             return window.location.href = forth_item.link
         }
     }
-  
+
     render() {
         console.log("-----------", this.context);
         const { user, setUser } = this.context
@@ -56,7 +56,6 @@ class Header extends HeaderComponent {
                                 <div className={classNames("main-navigation", { "active": this.state.navmethod })}>
                                     <nav>
                                         <ul className="main-menu" >
-
                                             {navigationmenu.length > 0 ? navigationmenu.map((item, i) => (
                                                 <li key={i} className={`menu-item ${item.child ? 'menu-item-has-children' : ''} `} onClick={this.triggerChild}>
                                                     {item.child ? <Link onClick={e => e.preventDefault()} to="/" className="text-custom-white"> {item.linkText} <span className="arrow" /></Link> : <Link to={item.link} className="text-custom-white"> {item.linkText} </Link>}
@@ -120,9 +119,9 @@ class Header extends HeaderComponent {
                                                             <Form.Group className="mb-3" controlId="formBasicPassword">
                                                                 <Form.Control type="number" placeholder="Phone Number" />
                                                             </Form.Group>
-                                                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                                                            {/* <Form.Group className="mb-3" controlId="formBasicPassword">
                                                                 <Form.Control type="number " placeholder="Zip Code" />
-                                                            </Form.Group>
+                                                            </Form.Group> */}
                                                             <Form.Group className="mb-3">
                                                                 <Form.Control type="number " placeholder="Child Age" />
                                                             </Form.Group>
@@ -153,12 +152,17 @@ class Header extends HeaderComponent {
                                             {/* <GetStartedSlider isModalIsOpen={isModalIsOpen} toggleModalFunc={this.toggleModalFunc} /> */}
                                         </ul>
                                         <div className='get-started-btn' >
-                                            <Button variant="success"
+                                          <NavLink to="/register">  <Button variant="success"
                                                 style={{ padding: "17px" }}
                                                 className={isModalIsOpen ? 'open' : ''}
                                                 ref={this.state.toggleModal}
-                                                onClick={isModalIsOpenFunc}>Get Started</Button>
-                                                {/* onClick={this.toggleModalFunc}>Get Started</Button> */}
+                                            >Registered now</Button></NavLink>
+                                            {/* <Button variant="success"
+                                                style={{ padding: "17px" }}
+                                                className={isModalIsOpen ? 'open' : ''}
+                                                ref={this.state.toggleModal}
+                                                onClick={isModalIsOpenFunc}>Registered now</Button> */}
+                                            {/* onClick={this.toggleModalFunc}>Get Started</Button> */}
                                         </div>
                                     </nav>
 

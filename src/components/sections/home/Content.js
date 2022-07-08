@@ -16,6 +16,8 @@ import Donationcampaigns from './Donationcampaigns';
 import Blogpost from './Blogpost';
 import Calendar from './Calendar';
 import { Descriptions } from './Descriptions';
+import Header from '../../layouts/Header';
+import DelHeader from './DelHeader';
 
 class Content extends Component {
 
@@ -46,7 +48,8 @@ class Content extends Component {
                     scheduleToggleHanlder={this.scheduleToggleHanlder}
                 />
                 <Descriptions />
-                <Team />
+                {/* <DelHeader /> */}
+                {/* <Team /> */}
                 {/* <OurWorks /> */}
                 <Donationbox />
                 <Productbox />

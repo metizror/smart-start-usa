@@ -731,36 +731,7 @@
       }
     ]
   },
-  {
-    "id": 3,
-    "linkText": "TECHNOLOGY ",
-    "child": false,
-    "link": "/technology",
-    "submenu": [
-      {
-        "id": 3.1,
-        "linkText": "Shop",
-        "child": true,
-        "submenu": [
-          {
-            "id": 3.11,
-            "link": "/shop-left",
-            "linkText": "Shop Left"
-          },
-          {
-            "id": 3.12,
-            "link": "/shop-right",
-            "linkText": "Shop Right"
-          }
-        ]
-      },
-      {
-        "id": 3.2,
-        "link": "/shop-details/1",
-        "linkText": "Shop Details"
-      }
-    ]
-  },
+
   {
     "id": 4,
     "linkText": "ABOUT US",

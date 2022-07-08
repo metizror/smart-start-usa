@@ -9,6 +9,7 @@ const Homefour = React.lazy(() => import("./components/pages/Homefour"));
 const Homefive = React.lazy(() => import("./components/pages/Homefive"));
 // About
 const About = React.lazy(() => import("./components/pages/About"));
+const RegisterPage = React.lazy(() => import("./components/pages/RegisterPage"));
 
 // Technology
 const Technology = React.lazy(() => import("./components/pages/Technology"));
@@ -27,7 +28,7 @@ const Cart = React.lazy(() => import("./components/pages/Cart"));
 const Checkout = React.lazy(() => import("./components/pages/Checkout"));
 const Contact = React.lazy(() => import("./components/pages/Contact"));
 const Login = React.lazy(() => import("./components/pages/Login"));
-const Register = React.lazy(() => import("./components/pages/Register"));
+const Register = React.lazy(() => import("./components/pages/RegisterPage"));
 const Error = React.lazy(() => import("./components/pages/Error"));
 // Blog
 const Blogleft = React.lazy(() => import("./components/pages/Blogleft"));
@@ -62,6 +63,7 @@ function App() {
           <Route exact path="/sat-ela-prep" component={Homefive} />
           {/* About */}
           <Route exact path="/about" component={About} />
+          {/* <Route exact path="/register-h" component={RegisterPage } /> */}
           {/* Technology */}
           <Route exact path="/technology" component={Technology} />
           {/* Events */}

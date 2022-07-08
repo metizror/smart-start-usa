@@ -47,7 +47,7 @@ class Banner extends HeaderComponent {
                                     <div className="row justify-content-center">
                                         <div className={"align-self-center " + item.position}>
                                             <div className={item.extraclass}>
-                                                <h1 className={`text-white fw-600 ${item.newClass}`} dangerouslySetInnerHTML={{ __html: item.title }} />
+                                                {/* <h1 className={`text-white fw-600 ${item.newClass}`} dangerouslySetInnerHTML={{ __html: item.title }} /> */}
                                                 {/* <h3 className={`text-white fw-600 ${item.newClass}`} dangerouslySetInnerHTML={{ __html: item.subtitle }} /> */}
                                                 <p className={`text-white fw-600 `}>{item.text}</p>
 
@@ -56,7 +56,7 @@ class Banner extends HeaderComponent {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="schedule-btn">
+                                    {/* <div className="schedule-btn">
 
                                         <button
 
@@ -70,7 +70,7 @@ class Banner extends HeaderComponent {
                                         // ref={this.input}
                                         >SCHEDULE AN EVALUATION<i className="fas fa-caret-right" /></span>
                                         </button>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div className="overlay overlay-bg-dark overlay-bg-img" />

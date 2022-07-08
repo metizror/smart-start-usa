@@ -32,7 +32,7 @@ class Footer extends Component {
         return (
             <Fragment>
                 <footer className="section-padding bg-light-theme pt-0 u-line bg-custom-primary">
-                   
+
                     <div className="container-fluid custom-container">
                         <div className="row">
                             <div className="col-xl col-lg-4 col-md-4 col-sm-6">
@@ -47,7 +47,7 @@ class Footer extends Component {
                                         incididunt</p> */}
                                 </div>
                             </div>
-                            <div className="col-xl col-lg-4 col-md-4 col-sm-6">
+                            {/* <div className="col-xl col-lg-4 col-md-4 col-sm-6">
                                 <div className="footer-links">
                                     <h6 className="text-custom-white">Useful Links</h6>
                                     <ul>
@@ -63,7 +63,7 @@ class Footer extends Component {
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="col-xl col-lg-4 col-md-4 col-sm-6">
                                 <div className="footer-links">
                                     <h6 className="text-custom-white">My Account</h6>
@@ -72,16 +72,11 @@ class Footer extends Component {
                                         </li>
                                         <li><Link to="/register" className="text-white fw-500">Signup</Link>
                                         </li>
-                                        <li><Link to="/wishlist" className="text-white fw-500">Wishlist</Link>
-                                        </li>
-                                        <li><Link to="/checkout" className="text-white fw-500">Checkout</Link>
-                                        </li>
-                                        <li><Link to="/cart" className="text-white fw-500"> Cart</Link>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-xl col-lg-4 col-md-4 col-sm-6">
+                            {/* <div className="col-xl col-lg-4 col-md-4 col-sm-6">
                                 <div className="footer-links">
                                     <h6 className="text-custom-white">Other Links</h6>
                                     <ul>
@@ -95,27 +90,28 @@ class Footer extends Component {
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="col-xl col-lg-4 col-md-4 col-sm-6">
                                 <div className="footer-links">
                                     <h6 className="text-custom-white">Contact info</h6>
                                     <ul className="contact-info">
                                         <li>
                                             <Link to="#" className="text-white"> <span><i className="pe-7s-timer" /></span>
-                                                Monday - Friday: 9:00 AM - 06:00 PM</Link>
+                                                Monday-Saturday  3:00 PM - 6:30PM
+                                            </Link>
                                         </li>
                                         <li>
                                             <Link to="#" className="text-white"> <span><i className="pe-7s-mail" /></span>
-                                                info@example.com</Link>
+                                                school@smartstartus.com</Link>
                                         </li>
                                         <li>
                                             <Link to="#" className="text-white"> <span><i className="pe-7s-call" /></span>
-                                                (+348) 123 456 7890</Link>
+                                                (+91) 726 801 970</Link>
                                         </li>
-                                        <li>
+                                        {/* <li>
                                             <Link to="#" className="text-white"> <span><i className="pe-7s-map-marker" /></span>
                                                 (+348) 123 456 7890</Link>
-                                        </li>
+                                        </li> */}
                                     </ul>
                                 </div>
                             </div>
@@ -132,14 +128,14 @@ class Footer extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4 text-center medewithlove align-self-center"> <Link to="#" className="text-custom-white">Made
+                            {/* <div className="col-lg-4 text-center medewithlove align-self-center"> <Link to="#" className="text-custom-white">Made
                                 with Real <i className="fas fa-heart" /> Yourwebsite</Link>
-                            </div>
-                            <div className="col-lg-4">
+                            </div> */}
+                            {/* <div className="col-lg-4">
                                 <div className="copyright-text"> <span className="text-white">© <Link to="#" className="text-white">Yourwebsite</Link> -
                                     2021 | All Right Reserved</span>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

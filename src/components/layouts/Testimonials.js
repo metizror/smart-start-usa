@@ -28,7 +28,7 @@ class Testimonials extends Component {
                     <div className="row">
                         <div className="col-12">
                             <div className="section-header-left text-center">
-                                <h3 className="text-white header-title">People Say About US</h3>
+                                <h3 className="text-black header-title">People Say About US</h3>
                             </div>
                         </div>
                     </div>
@@ -38,11 +38,11 @@ class Testimonials extends Component {
                                 {testimonials.map((item, i) => (
                                     <SwiperSlide key={i}>
                                         {getAuthor(item.author).map((author, i) => (
-                                            <div key={i} className="feedback-item-two">
+                                            <div key={i} className="feedback-item-two ">
                                                 <img src={process.env.PUBLIC_URL + "/" + author.image} alt={author.name} />
-                                                <p className="text-white fs-16">{item.comment}</p>
-                                                <h5 className="text-white fw-600 no-margin">{author.name}</h5>
-                                                <span className="text-white fw-400">{author.address}</span>
+                                                <p className="text-black fw-900 no-margin fs-24 font-weight-bold">{item.comment}</p>
+                                                <h5 className="text-black fw-600 no-margin">{author.name}</h5>
+                                                <span className="text-black fw-400">{author.address}</span>
                                             </div>
                                         ))}
                                     </SwiperSlide>

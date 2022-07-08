@@ -33,7 +33,7 @@ class Home extends Component {
                 <Content 
                     parentCallback={this.handleToggleModal } 
                 />
-                <Newsletter layout="" />
+                {/* <Newsletter layout="" /> */}
                 <Footer />
             </Fragment>
         );

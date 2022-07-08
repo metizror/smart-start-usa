@@ -46,7 +46,7 @@ class Header extends HeaderComponent {
             <header className={"header sticky"}>
                 <div className="container-fluid custom-container">``
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-11">
                             <div className="navigation">
                                 <div className="logo">
                                     <Link to="/">

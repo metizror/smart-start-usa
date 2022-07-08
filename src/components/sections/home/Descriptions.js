@@ -10,7 +10,7 @@ export const Descriptions = () => {
                             <div className="section-header-left title">
                                 <div className="text-center">
 
-                                    <h1 style={{ color: 'white'}}> Smart Start USA</h1>
+                                    <h1 style={{ color: 'white' }} className='display-1'> Smart <span className="text-dark-red">Start</span> USA</h1>
 
                                 {/* <h3 className="text-light-black header-title text-light-black header-title our-program-text">OUR COURSES</h3> */}
                                 <h5 className="desc-text">

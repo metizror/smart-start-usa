@@ -35,8 +35,8 @@ class Bestsellers extends Component {
                     <div className="row">
                         <div className="col-12">
                             <div className="section-header-left title">
-                                <h3 className="text-light-black header-title our-program-text">OUR PROGRAMS</h3>
-                                <span className="fs-16"><Link to="/shop-left">See All Bestseller</Link></span>
+                                <h3 className="text-light-black header-title redColor">OUR PROGRAMS</h3>
+                                {/* <span className="fs-16"><Link to="/shop-left">See All Bestseller</Link></span> */}
                             </div>
                         </div>
                         {programJson.slice(0, 6).map((item, i) => (
@@ -44,11 +44,12 @@ class Bestsellers extends Component {
                                 <div className="product-box mb-md-20">
                                     <div className="product-img">
                                         <Link to={"/shop-details/" + item.id}>
-                                            <img src={process.env.PUBLIC_URL + "/" + item.image[0]} className="img-fluid full-width" alt={item.title} />
+                                            <img src={process.env.PUBLIC_URL + "/" + item.image[0]} className="img-fluid full-width " alt={item.title} />
                                         </Link>
                                     </div>
-                                    <div className="product-caption text-center">
-                                        <h6 className="product-title fw-500 mt-10"><Link to={"/shop-details/" + item.id} className="our-program-text">{item.title}</Link></h6>
+                                    {/* <div className="product-caption text-center"> */}
+                                    <div className=" text-center">
+                                        <h6 className="product-title fw-500 mt-10"><Link to={"/shop-details/" + item.id} className="our-program-text redColor">{item.title}</Link></h6>
                                     </div>
                                 </div>
                             </div>

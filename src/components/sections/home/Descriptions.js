@@ -10,13 +10,13 @@ export const Descriptions = () => {
                             <div className="section-header-left title">
                                 <div className="text-center">
 
-                                    <h1 style={{ color: 'white' }} className='display-1'> Smart <span className="text-dark-red">Start</span> USA</h1>
+                                    <h1 style={{ color: 'white' }} className='display-1'> Smart Start USA</h1>
 
-                                {/* <h3 className="text-light-black header-title text-light-black header-title our-program-text">OUR COURSES</h3> */}
-                                <h5 className="desc-text">
-                                        <h3> <span class='text-dark-red' style={{ color:'#28a745' }}>The  Best Educational  Brand</span></h3>
-                                    Smart Start USA is an innovative after-school program designed for elementary, middle, and high school students. We offer interactive online courses that prepare students to excel in major academic areas and successfully conquer national academic contests, Regents Examinations, SAT, ISEE, and other essential assessments.
-                                </h5>
+                                    {/* <h3 className="text-light-black header-title text-light-black header-title our-program-text">OUR COURSES</h3> */}
+                                    <h5 className="desc-text">
+                                        <h3> <span class='text-dark-red' style={{ color: '#28a745' }}>The  Best Educational  Brand</span></h3>
+                                        Smart Start USA is an innovative after-school program designed for elementary, middle, and high school students. We offer interactive online courses that prepare students to excel in major academic areas and successfully conquer national academic contests, Regents Examinations, SAT, ISEE, and other essential assessments.
+                                    </h5>
                                 </div>
 
                             </div>

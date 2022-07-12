@@ -1318,7 +1318,8 @@ header.sticky .main-navigation > nav > .main-menu > .menu-item > a {
   bottom: 0;
   width: 20%;
   height: 2px;
-  background-color: #c9a050;
+  /* background-color: #c9a050; */
+  background-color: red;
   content: "";
   z-index: 1;
   opacity: 0;

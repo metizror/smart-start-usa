@@ -68,7 +68,7 @@ class Productbox extends Component {
                         <div className="col-12">
                             <div className="section-header-left">
                                 <h3 className="text-light-black header-title title" style={{ color: "#811524" }}>Coupon 22</h3>
-                                <div className="w-25 ">
+                                <div className="w-25">
                                     <img src={process.env.PUBLIC_URL + "/assets/img/logo/newlogo.png"} className="" alt="img" />
                                 </div>
                             </div>

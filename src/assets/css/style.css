@@ -1392,7 +1392,9 @@ header.sticky .main-navigation > nav > .main-menu > .menu-item > a {
 .menu-item-has-children > .sub-menu > li.menu-item:hover > a {
   padding-left: 25px;
   transition: 0.5s;
-  color: #c9a050;
+  /* color: #c9a050; */
+  color: #811524;
+  
 }
 .menu-item-has-children > .sub-menu > li.menu-item-has-children > a > .arrow {
   position: absolute;

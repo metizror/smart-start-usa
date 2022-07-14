@@ -28,6 +28,7 @@ class Header extends HeaderComponent {
         }
     }
     addsubMenuNewLinkHandler(item) {
+        console.log(item);
         // const isLink = forth_item.link.search('mylearnworlds') == -1 ? false : true
         // // console.log(forth_item.link.search('mylearnworlds'));
         // if (!isLink) {
@@ -82,7 +83,7 @@ class Header extends HeaderComponent {
                                                                             {sub_item.submenu.map((third_item, i) => (
                                                                                 <li className={`menu-item ${third_item.child ? 'menu-item-has-children' : ''} `} key={i}>
 
-                                                                                    {third_item.child ? <Link onClick={e => e.preventDefault()} to="/" > {third_item.linkText} <span className="arrow" /></Link> : <Link to={third_item.link}> {third_item.linkText} </Link>}
+                                                                                    {third_item.child ? <Link onClick={e => e.preventDefault()} to="/" > {third_item.linkText} <span className="arrow" /></Link> : <Link onClick={() => this.addsubMenuNewLinkHandler(third_item)} to={third_item.link}> {third_item.linkText} </Link>}
                                                                                     {third_item.submenu ?
                                                                                         <ul className="sub-menu">
                                                                                             {third_item.submenu.map((forth_item, i) => (

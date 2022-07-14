@@ -340,7 +340,8 @@
           {
             "id": 3.11,
             "linkText": "ISEE",
-            "child": true
+            "link": "https://smartstartus.mylearnworlds.com/course/isee-intermediate",
+            "child": false
           },
           {
             "id": 3.11,

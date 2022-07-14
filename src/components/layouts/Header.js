@@ -72,7 +72,7 @@ class Header extends HeaderComponent {
                                         <ul className="main-menu" >
                                             {navigationmenu.length > 0 ? navigationmenu.map((item, i) => (
                                                 <li key={i} className={`menu-item ${item.child ? 'menu-item-has-children' : ''} `} onClick={this.triggerChild}>
-                                                    {item.child ? <Link onClick={e => e.preventDefault()} to="" className="text-custom-white"> {item.linkText} <span className="arrow" /></Link> : <Link onClick={() => addNewLinkHandler(item.link)} to={item.link} className="text-custom-white"> {item.linkText} </Link>}
+                                                    {item.child ? <Link onClick={e => e.preventDefault()} to="" className="text-custom-white"> {item.linkText} <span className="arrow" /></Link> : <Link onClick={() => addNewLinkHandler(item.link)}className="text-custom-white"> {item.linkText} </Link>}
                                                     {item.child ?
                                                         <ul className="sub-menu" role="menu">
                                                             {item.submenu.map((sub_item, i) => (

@@ -164,8 +164,8 @@ class Header extends HeaderComponent {
                                             {/* </div> */}
                                             {/* <GetStartedSlider isModalIsOpen={isModalIsOpen} toggleModalFunc={this.toggleModalFunc} /> */}
                                         </ul>
-                                        <div className='get-started-btn' >
-                                          <NavLink to="/register">  <Button variant="success"
+                                        <div className='get-started-btn' onClick={() => window.location.href ="https://school.smartstartus.com/catalog"} >
+                                          <NavLink to="/#">  <Button variant="success"
                                                 style={{ padding: "17px" }}
                                                 className={isModalIsOpen ? 'open' : ''}
                                                 ref={this.state.toggleModal}

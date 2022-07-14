@@ -73,7 +73,7 @@ class Productbox extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-lg-4 col-md-4">
+                        {/* <div className="col-xl-3 col-lg-4 col-md-4">
                             <div className="large-product-box  p-relative">
                                 <div className="featured-product-box box-shadow">
                                     <div className="featured-pro-title">
@@ -158,7 +158,7 @@ class Productbox extends Component {
                                         </div>
                                     </div>
                                 ))}
-                                {/* Modal (Quick View) */}
+                                // Modal (Quick View) 
                                 <Modal show={this.state.modalshow} className="quick-view-modal" onHide={this.modalClose} aria-labelledby="contained-modal-title-vcenter" size="lg" centered>
                                     <Modal.Body>
                                         <button type="button" className="close" onClick={this.modalClose}>×</button>
@@ -166,7 +166,7 @@ class Productbox extends Component {
                                     </Modal.Body>
                                 </Modal>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>

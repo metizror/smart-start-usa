@@ -33,8 +33,8 @@ class Bestsellers extends Component {
     }
 
     addNewLinkHandler(forth_item) {
-        console.log("-------------------=-=-=-=--", forth_item.link.search('smartstartus'));
-        const isLink = forth_item.link.search('smartstartus') == -1 ? false : true
+        // console.log("-------------------=-=-=-=--", forth_item.link.search('smartstartus'));
+        // const isLink = forth_item.link.search('smartstartus') == -1 ? false : true
         // console.log(forth_item.link.search('mylearnworlds'));
         if (!forth_item.link) {
             return ;

@@ -339,25 +339,8 @@
           },
           {
             "id": 3.11,
-            "linkText": "INTERMEDIATE",
-            "child": true,
-            "submenu": [
-              {
-                "id": 3.111,
-                "link": "https://smartstartus.mylearnworlds.com/course/isee-intermediate",
-                "linkText": "Grades 6"
-              },
-              {
-                "id": 3.112,
-                "link": "https://smartstartus.mylearnworlds.com/course/isee-intermediate",
-                "linkText": "Grades 7"
-              },
-              {
-                "id": 3.113,
-                "link": "https://smartstartus.mylearnworlds.com/course/isee-intermediate",
-                "linkText": "Grades 8"
-              }
-            ]
+            "linkText": "ISEE",
+            "child": true
           },
           {
             "id": 3.11,

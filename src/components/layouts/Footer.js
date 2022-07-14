@@ -82,7 +82,7 @@ class Footer extends Component {
                                         </li>
                                         <li>
                                             <Link to="#" className="text-white"> <span><i className="pe-7s-call" /></span>
-                                                (+91) 726 801 970</Link>
+                                                (917) 268 01970 </Link>
                                         </li>
 
                                     </ul>

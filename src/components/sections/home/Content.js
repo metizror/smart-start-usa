@@ -50,6 +50,7 @@ class Content extends Component {
                 {/* <Team /> */}
                 {/* <OurWorks /> */}
                 <Donationbox />
+                <Bestsellers />
                 <Productbox />
                 {/* <Servicetype/> */}
                 {/* <Videocta/> */}
@@ -58,7 +59,6 @@ class Content extends Component {
                 {/* <Calendar/> */}
                 <Gallery />
                 <Testimonials />
-                <Bestsellers />
                 {/* <JoinSmartStartUSA /> */}
                 {/* <Blogpost/> */}
             </Fragment>

@@ -8,6 +8,9 @@ import {
     // OverlayTrigger, Tooltip,
     Modal
 } from "react-bootstrap";
+import { render } from '@testing-library/react';
+
+// smartstartus
 
 
 
@@ -28,6 +31,19 @@ class Bestsellers extends Component {
     modalClose() {
         this.setState({ modalshow: false });
     }
+
+    addNewLinkHandler(forth_item) {
+        console.log("-------------------=-=-=-=--", forth_item.link.search('smartstartus'));
+        const isLink = forth_item.link.search('smartstartus') == -1 ? false : true
+        // console.log(forth_item.link.search('mylearnworlds'));
+        if (!forth_item.link) {
+            return ;
+        } else {
+            console.log('falsess');
+            return window.location.href = forth_item.link
+        }
+    }
+
     render() {
         return (
             <section className="recent-order section-padding">
@@ -42,8 +58,9 @@ class Bestsellers extends Component {
                         {programJson.slice(0, 6).map((item, i) => (
                             <div className="col-xl-2 col-lg-4 col-md-6 col-sm-6" key={i}>
                                 <div className="product-box mb-md-20">
-                                    <div className="product-img">
-                                        <Link to={"/shop-details/" + item.id}>
+                                    <div className="product-img" >
+                                        {/* <Link to={"/shop-details/" + item.id}> */}
+                                        <Link onClick={() => this.addNewLinkHandler(item)}>
                                             <img src={process.env.PUBLIC_URL + "/" + item.image[0]} className="img-fluid full-width " alt={item.title} />
                                         </Link>
                                     </div>

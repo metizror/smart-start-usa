@@ -40,7 +40,7 @@ class Donationbox extends HeaderComponent {
                         <div className="row">
                             {donationblock.slice(5, 7).map((item, i) => (
                                 <div className="col-xl-6" key={i}>
-                                    <div className="story-wrapper">
+                                    <div className="story-wrapper" onClick={() => window.location.href = item.link}>
                                         <img src={process.env.PUBLIC_URL + "/" + item.image} alt={item.title} className="full-width img-fluid mx-auto d-block" />
                                         <div className="story-box-content story-content-wrapper">
                                             {getCategories(item.category).map((cat, i) => (
@@ -54,7 +54,7 @@ class Donationbox extends HeaderComponent {
                             ))}
                             {donationblock.slice(0, 3).map((item, i) => (
                                 <div className="col-xl-4 col-lg-6" key={i}>
-                                    <div className="story-wrapper">
+                                    <div className="story-wrapper" onClick={() => window.location.href = item.link }>
                                         <img src={process.env.PUBLIC_URL + "/" + item.image} alt={item.title} className="full-width img-fluid mx-auto d-block" />
                                         <div className="story-box-content story-content-wrapper">
                                             {getCategories(item.category).map((cat, i) => (
@@ -68,7 +68,7 @@ class Donationbox extends HeaderComponent {
                             ))}
                             {donationblock.slice(7, 9).map((item, i) => (
                                 <div className="col-xl-6" key={i}>
-                                    <div className="story-wrapper">
+                                    <div className="story-wrapper" onClick={() => window.location.href = item.link}>
                                         {/* { console.log(" --   -- - - ", item) } */}
                                         <img src={process.env.PUBLIC_URL + "/" + item.image} alt={item.title} className="full-width img-fluid mx-auto d-block" />
                                         <div className="story-box-content story-content-wrapper">

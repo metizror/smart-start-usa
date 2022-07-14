@@ -61,11 +61,11 @@
       {
         "id": 1.1,
         "linkText": "ELEMENTARY SCHOOL",
-        "link": "/"
+        "link": "https://school.smartstartus.com/elementary-math-catalog"
       },
       {
         "id": 1.2,
-        "link": "/science",
+        "link": "https://school.smartstartus.com/elementary-math-catalog",
         "linkText": "MIDDLE SCHOOL"
       },
       {
@@ -85,7 +85,6 @@
       },
       {
         "id": 1.5,
-        "link": "/sat-ela-prep",
         "linkText": "HOME SCHOOLING"
       }
     ]
@@ -319,7 +318,6 @@
             "linkText": "SAT ELA/A ",
             "child": true,
             "submenu": [
-              
               {
                 "id": 3.111,
                 "link": "https://smartstartus.mylearnworlds.com/course/sat-elaa",
@@ -332,7 +330,6 @@
             "linkText": "SAT ELA/B",
             "child": true,
             "submenu": [
-             
               {
                 "id": 3.111,
                 "link": "https://smartstartus.mylearnworlds.com/course/sat-elab",
@@ -367,7 +364,6 @@
             "linkText": "ISEE ADVANCED ",
             "child": true,
             "submenu": [
-             
               {
                 "id": 3.111,
                 "link": "https://smartstartus.mylearnworlds.com/course/isee-advanced",
@@ -438,7 +434,6 @@
             "linkText": "US HISTORY",
             "child": true,
             "submenu": [
-              
               {
                 "id": 3.111,
                 "link": "https://smartstartus.mylearnworlds.com/course/us-history-and-government",
@@ -452,7 +447,6 @@
             "linkText": "WORLD HISTORY ",
             "child": true,
             "submenu": [
-             
               {
                 "id": 3.111,
                 "link": "https://smartstartus.mylearnworlds.com/course/world-history-global",
@@ -462,14 +456,13 @@
           }
         ]
       }
-      
     ]
   },
-   {
-        "id": 4,
-        "link": "/Sat-math-prep",
-        "linkText": "HOME SCHOOL"
-      },
+  {
+    "id": 4,
+    "link": "/Sat-math-prep",
+    "linkText": "HOME SCHOOL"
+  },
 
   {
     "id": 5,

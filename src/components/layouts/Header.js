@@ -34,7 +34,7 @@ class Header extends HeaderComponent {
         //     return forth_item;
         // } else {
         //     console.log('falsess');
-            return window.location.href =item.link
+        return window.location.href = item.link
         // }
     }
 
@@ -71,12 +71,12 @@ class Header extends HeaderComponent {
                                         <ul className="main-menu" >
                                             {navigationmenu.length > 0 ? navigationmenu.map((item, i) => (
                                                 <li key={i} className={`menu-item ${item.child ? 'menu-item-has-children' : ''} `} onClick={this.triggerChild}>
-                                                    {item.child ? <Link onClick={e =>  e.preventDefault() } to="" className="text-custom-white"> {item.linkText} <span className="arrow" /></Link> : <Link to={item.link} className="text-custom-white"> {item.linkText} </Link>}
+                                                    {item.child ? <Link onClick={e => e.preventDefault()} to="" className="text-custom-white"> {item.linkText} <span className="arrow" /></Link> : <Link onClick={() => addNewLinkHandler(item.link)} to={item.link} className="text-custom-white"> {item.linkText} </Link>}
                                                     {item.child ?
                                                         <ul className="sub-menu" role="menu">
                                                             {item.submenu.map((sub_item, i) => (
                                                                 <li key={i} className={`menu-item ${sub_item.child ? 'menu-item-has-children' : ''} `}>
-                                                                    {sub_item.child ? <Link to="/" > {sub_item.linkText} <span className="arrow" /></Link> : <Link to="" onClick={() => this.addsubMenuNewLinkHandler(sub_item)}> {sub_item.linkText} </Link>} 
+                                                                    {sub_item.child ? <Link to="/" > {sub_item.linkText} <span className="arrow" /></Link> : <Link to="" onClick={() => this.addsubMenuNewLinkHandler(sub_item)}> {sub_item.linkText} </Link>}
                                                                     {sub_item.submenu ?
                                                                         <ul className="sub-menu">
                                                                             {sub_item.submenu.map((third_item, i) => (
@@ -164,8 +164,8 @@ class Header extends HeaderComponent {
                                             {/* </div> */}
                                             {/* <GetStartedSlider isModalIsOpen={isModalIsOpen} toggleModalFunc={this.toggleModalFunc} /> */}
                                         </ul>
-                                        <div className='get-started-btn' onClick={() => window.location.href ="https://school.smartstartus.com/catalog"} >
-                                          <NavLink to="/#">  <Button variant="success"
+                                        <div className='get-started-btn' onClick={() => window.location.href = "https://school.smartstartus.com/catalog"} >
+                                            <NavLink to="/#">  <Button variant="success"
                                                 style={{ padding: "17px" }}
                                                 className={isModalIsOpen ? 'open' : ''}
                                                 ref={this.state.toggleModal}

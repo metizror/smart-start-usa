@@ -37,7 +37,7 @@ class Footer extends Component {
                         <div className="row">
                             <div className="col-xl col-lg-4 col-md-4 col-sm-6">
                                 <div className="footer-contact">
-                                    <div className="logo mb-xl-20">
+                                    <div className="logo mb-xl-20 footer-logo">
                                         <Link to="#">
                                             <img src={process.env.PUBLIC_URL + "/assets/img/logo/newlogo.png"} className="img-fluid" alt="img" />
                                         </Link>

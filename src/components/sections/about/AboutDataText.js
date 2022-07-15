@@ -44,7 +44,7 @@ export class AboutDataText extends Component {
                 <Container>
                     <Row >
                         <Col>
-                            <div className="history-title mb-md-40 ">
+                            <div className="history-title mb-md-40 mt-5 ">
                                 <h2 className="text-light-black fs-2">Smart Start USA is the  <span className="text-light-green">Best Educational Brand!</span></h2>
                                 <p className="text-light-white fs-5">Smart Start USA is an innovative after-school program designed for elementary, middle, and high school students. We offer interactive online courses that prepare students to excel in major academic areas and successfully conquer national academic contests, Regents Examinations, SAT, ISEE, and other essential assessments.</p>
                                 {/* <p className="text-light-white fs-5">

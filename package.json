@@ -2,7 +2,7 @@
   "name": "nina",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://smartstartus.com/",
+  "homepage": ".",
   "engines": {
     "node": "16.14.0"
   },

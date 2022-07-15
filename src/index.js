@@ -22,7 +22,7 @@ import { UserProvider } from './Context/UserContext';
 // const user = { user: 'Tania', loggedIn: false }
 
 ReactDOM.render(
-  <BrowserRouter basename={"/templatemonster/react/nina/"}>
+  <BrowserRouter>
     <UserProvider
       // value={user}
     >

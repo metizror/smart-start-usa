@@ -537,7 +537,8 @@ table {
   height: 100%;
 }
 .section-padding {
-  padding: 80px 0;
+  padding: 0px;
+  /* padding: 80px 0; */
 }
 .section-padding-top {
   padding-top: 80px;
@@ -2714,6 +2715,10 @@ footer .subscribe_form button {
 .footer-links i {
   font-size: 18px;
 }
+
+footer .footer-logo {
+  width:57%
+}
 .copyright .medewithlove {
   overflow: hidden;
 }
@@ -4640,6 +4645,11 @@ footer .footer-links .contact-info li a span {
   span {
   font-size: 11px;
   margin-left: 3px;
+}
+
+.testimonials-Img{
+padding-top: 30px;
+padding-bottom: 30px;
 }
 /*list view*/
 

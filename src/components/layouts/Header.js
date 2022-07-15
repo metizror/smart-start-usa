@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderComponent from '../../helper/navhelper';
 import classNames from 'classnames';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import navigationmenu from '../../data/navigation.json';
 import { Button, Dropdown, DropdownButton, Form } from 'react-bootstrap';
 import UserContext from '../../Context/UserContext';
@@ -17,6 +17,10 @@ class Header extends HeaderComponent {
     state = {
         scheduleModalIsOpen: false,
     }
+
+    // const
+    
+    
     addNewLinkHandler(forth_item) {
         const isLink = forth_item.link.search('mylearnworlds') == -1 ? false : true
         // console.log(forth_item.link.search('mylearnworlds'));
@@ -52,8 +56,12 @@ class Header extends HeaderComponent {
         const isModalIsOpen = user.isModalOpen
         // const isModalIsOpen = this.state.toggleModal
         const scheduleToggle = this.state.scheduleToggle
-        const addNewLinkHandler = (link) => {
-            window.location.href = link
+        const addNewLinkHandler = (item) => {
+            if (item.link) {
+                return window.location.href = item.link
+            } else {
+                return;
+            }
         }
         return (
             // <header className="header sticky">
@@ -72,9 +80,9 @@ class Header extends HeaderComponent {
                                         <ul className="main-menu" >
                                             {navigationmenu.length > 0 ? navigationmenu.map((item, i) => (
                                                 <li key={i} className={`menu-item ${item.child ? 'menu-item-has-children' : ''} `} onClick={this.triggerChild}>
-                                                    {item.child ? <Link onClick={e => e.preventDefault()} to="" className="text-custom-white"> {item.linkText} <span className="arrow" /></Link> : <Link onClick={() => addNewLinkHandler(item.link)}className="text-custom-white"> {item.linkText} </Link>}
+                                                    {item.child ? <Link onClick={e => e.preventDefault()} to="" className="text-custom-white"> {item.linkText} <span className="arrow" /></Link> : <Link onClick={(e) => { e.preventDefault(); addNewLinkHandler(item) }} className="text-custom-white"> {item.linkText} </Link>}
                                                     {item.child ?
-                                                        <ul className="sub-menu" role="menu">
+                                                        <ul className="sub-menu" role="menu" >
                                                             {item.submenu.map((sub_item, i) => (
                                                                 <li key={i} className={`menu-item ${sub_item.child ? 'menu-item-has-children' : ''} `}>
                                                                     {sub_item.child ? <Link to="/" > {sub_item.linkText} <span className="arrow" /></Link> : <Link to="" onClick={() => this.addsubMenuNewLinkHandler(sub_item)}> {sub_item.linkText} </Link>}

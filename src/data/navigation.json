@@ -3,7 +3,7 @@
     "id": 1,
     "linkText": "Home",
     "child": false,
-    "link": "/",
+  "link": "/templatemonster/react/nina/",
     "submenu": [
       {
         "id": 1.1,
@@ -117,21 +117,6 @@
                 "id": 3.111,
                 "link": "https://smartstartus.mylearnworlds.com/course/mathematics-5th-grade",
                 "linkText": "Grades 5"
-              },
-              {
-                "id": 3.111,
-                "link": "https://smartstartus.mylearnworlds.com/course/mathematics-6th-grade",
-                "linkText": "Grades 6"
-              },
-              {
-                "id": 3.111,
-                "link": "https://smartstartus.mylearnworlds.com/course/mathematics-7th-grade",
-                "linkText": "Grades 7"
-              },
-              {
-                "id": 3.111,
-                "link": "https://smartstartus.mylearnworlds.com/course/mathematics-8th-grade",
-                "linkText": "Grades 8"
               }
             ]
           },
@@ -157,6 +142,24 @@
                 "id": 3.111,
                 "link": "https://smartstartus.mylearnworlds.com/course/algebra-ii-and-trigonometry",
                 "linkText": " High School "
+              }
+            ]
+          },
+          {
+            "id": 3.11,
+            "linkText": "ALGEBRA PREP",
+            "child": true,
+            "submenu": [
+             
+              {
+                "id": 3.111,
+                "link": "https://smartstartus.mylearnworlds.com/course/mathematics-7th-grade",
+                "linkText": "Grades 7"
+              },
+              {
+                "id": 3.111,
+                "link": "https://smartstartus.mylearnworlds.com/course/mathematics-8th-grade",
+                "linkText": "Grades 8"
               }
             ]
           },
@@ -441,7 +444,6 @@
   },
   {
     "id": 4,
-    "link": "/Sat-math-prep",
     "linkText": "HOME SCHOOL"
   },
 
